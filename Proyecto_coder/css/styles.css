@@ -1,0 +1,32 @@
+/* ========= HEADER ========= */
+
+.nav__item {
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #596554;
+}
+.nav__logo {
+  color: #596554;
+
+  text-decoration: none;
+}
+
+/* ========= IMAGE ========= */
+
+.img {
+  width: 65%;
+  height: auto;
+}
+
+/* ========= IMAGE ========= */
+
+.table th,
+td {
+  border: 1px solid black;
+}
+
+.title {
+  color: #596554;
+}

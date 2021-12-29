@@ -4,20 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =============== CSS =============== -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <title>Harvest</title>
   </head>
   <body>
     <!-- =============== HEADER =============== -->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="/">Harvest Mexico City</a>
-        <div class="nav_menu">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="/">Home</a></li>
-            <li class="nav_item"><a href="./about.html">About</a></li>
-            <li class="nav_item"><a href="./connect.html">Connect</a></li>
-            <li class="nav_item"><a href="./groups.html">Groups</a></li>
-            <li class="nav_item"><a href="./give.html">Give</a></li>
+        <a href="/" class="nav__logo">Harvest Mexico City</a>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/about.html" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/connect.html" class="nav__link">Connect</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/groups.html" class="nav__link">Groups</a>
+            </li>
+            <li class="nav__item">
+              <a href="./pages/give.html" class="nav__link">Give</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -33,16 +47,14 @@
     </section>
 
     <!-- =============== VIDEO =============== -->
-    <section class="video"></section>
+    <section class="video">
+      <img src="./img/service.jpg" alt="Service" class="img" />
+    </section>
 
     <!-- =============== TABLE =============== -->
-    <style>
-      table, th, td {
-        border:1px solid black;
-      }
-    </style>
-    <table style="width: 50%;">
-      <tr>
+
+    <table class="table" style="width: 50%">
+      <tr class="title">
         <th>Activities</th>
         <th>Where</th>
         <th>When</th>
@@ -69,9 +81,7 @@
             <li>Every Monday</li>
           </ol>
         </td>
-        
       </tr>
-      
     </table>
 
     <!-- =============== CONTACT =============== -->
@@ -79,29 +89,29 @@
       <form action="">
         <h4>Want to know more?</h4>
         <label for="">Name</label>
-        <input type="text" placeholder="Write Your Name" required>
-        <br><br>
+        <input type="text" placeholder="Write Your Name" required />
+        <br /><br />
         <label for="">Email</label>
-        <input type="email" placeholder="Write Your Email" required>
-        <br><br>
+        <input type="email" placeholder="Write Your Email" required />
+        <br /><br />
         <label for="">Phone Number</label>
-        <input type="number" placeholder="Write Your Phone Number">
-        <br><br>
+        <input type="number" placeholder="Write Your Phone Number" />
+        <br /><br />
         <label for="">Got Questions?</label>
         <select name="Services">
           <option value="1">Services</option>
           <option value="2">Events</option>
           <option value="3">Other</option>
         </select>
-        <br><br>
+        <br /><br />
         <label for="">Accept Terms & Agreements</label>
-        <input type="checkbox" required>
-        <br><br>
-        <input type="submit" value="Send"> 
-        <input type="reset" value="Delete"> 
+        <input type="checkbox" required />
+        <br /><br />
+        <input type="submit" value="Send" />
+        <input type="reset" value="Delete" />
       </form>
     </section>
-    
+
     <!-- =============== FOOTER =============== -->
     <section id="footer">
       <footer class="footer_section">
@@ -110,6 +120,5 @@
         </div>
       </footer>
     </section>
-    
   </body>
 </html>
