@@ -20,7 +20,11 @@
   height: auto;
 }
 
-/* ========= IMAGE ========= */
+/* ========= TABLE ========= */
+
+table {
+  width: 50%;
+}
 
 .table th,
 td {
