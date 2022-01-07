@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--=============== REMIXICONS ===============-->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    /> -->
+
     <!-- =============== CSS =============== -->
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -18,7 +24,7 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__link">Home</a>
+              <a href="index.html" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="pages/about.html" class="nav__link">About</a>
@@ -33,84 +39,63 @@
               <a href="pages/give.html" class="nav__link">Give</a>
             </li>
           </ul>
+          <i class="ri-close-line nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-function-line"></i>
         </div>
       </nav>
     </header>
-    <!-- =============== HOME =============== -->
-    <section class="home">
-      <div>
-        <h1>COME CELEBRATE WITH US</h1>
-      </div>
-      <div class="words">
-        <h4>Join Us on Sunday! 11 am</h4>
-      </div>
-    </section>
 
-    <!-- =============== VIDEO =============== -->
-    <section class="video">
-      <img src="./img/service.jpg" alt="Service" class="img" />
-    </section>
+    <main class="main">
+      <!-- =============== HOME =============== -->
+      <section class="home">
+        <div>
+          <h1>ANYTHING IS POSSIBLE!</h1>
+        </div>
+        <div class="words">
+          <h4>Join Us on Sunday! 11 am</h4>
+        </div>
+      </section>
 
-    <!-- =============== TABLE =============== -->
+      <!-- =============== VIDEO =============== -->
+      <section class="video">
+        <img src="./img/service.jpg" alt="Service" class="img" />
+      </section>
 
-    <table class="table">
-      <tr class="title">
-        <th>Activities</th>
-        <th>Where</th>
-        <th>When</th>
-      </tr>
-      <tr>
-        <td>
-          <ul>
-            <li>Junior Five</li>
-            <li>Youth</li>
-            <li>Lunch with Womens</li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>Popeye's</li>
-            <li>Savior Camp</li>
-            <li>Church Building</li>
-          </ul>
-        </td>
-        <td>
-          <ol>
-            <li>Saturday 15th</li>
-            <li>March 24th</li>
-            <li>Every Monday</li>
-          </ol>
-        </td>
-      </tr>
-    </table>
+      <!-- =============== TABLE =============== -->
 
-    <!-- =============== CONTACT =============== -->
-    <section id="contact">
-      <form action="">
-        <h4>Want to know more?</h4>
-        <label for="">Name</label>
-        <input type="text" placeholder="Write Your Name" required />
-        <br /><br />
-        <label for="">Email</label>
-        <input type="email" placeholder="Write Your Email" required />
-        <br /><br />
-        <label for="">Phone Number</label>
-        <input type="number" placeholder="Write Your Phone Number" />
-        <br /><br />
-        <label for="">Got Questions?</label>
-        <select name="Services">
-          <option value="1">Services</option>
-          <option value="2">Events</option>
-          <option value="3">Other</option>
-        </select>
-        <br /><br />
-        <label for="">Accept Terms & Agreements</label>
-        <input type="checkbox" required />
-        <br /><br />
-        <input type="submit" value="Send" />
-        <input type="reset" value="Delete" />
-      </form>
-    </section>
+      <table class="table">
+        <tr class="title">
+          <th>Activities</th>
+          <th>Where</th>
+          <th>When</th>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li>Junior Five</li>
+              <li>Youth</li>
+              <li>Lunch with Womens</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Popeye's</li>
+              <li>Savior Camp</li>
+              <li>Church Building</li>
+            </ul>
+          </td>
+          <td>
+            <ol>
+              <li>Saturday 15th</li>
+              <li>March 24th</li>
+              <li>Every Monday</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </main>
 
     <!-- =============== FOOTER =============== -->
     <section id="footer">

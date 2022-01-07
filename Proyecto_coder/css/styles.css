@@ -1,23 +1,170 @@
-/* ========= HEADER ========= */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Work+Sans:wght@400;600;868&display=swap");
 
-.nav__item {
+:root {
+  --header-height: 3rem;
+
+  /* ========= COLOR ========== */
+  --title-color-1: #100000;
+  --title-color-2: #ffffff;
+  --sub-title-color: #f0f0f0;
+  --body-color: #f0f0f0;
+  --text-color: #212121;
+  --nav-color: #8f8f8f;
+  --nav-color-2: #2d2d2d;
+  --black-color: #100000;
+
+  /* ========= FONT & TYPO =========== */
+
+  --body-font: "Monserrat", sans-serif;
+  --title-font: "Work Sans", sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.8rem;
+
+  /* ======= FONT WEIGHT ======= */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 1000;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.8rem;
+  --sammel-font-size: 0.75rem;
+
+  /* ======= Z INDEX =========== */
+  --z-fixed: 100;
+}
+
+/* ========= BASE ============== */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--title-color-1);
+  font-family: var(--title-font);
+  font-weight: var(--font-bold);
+}
+
+ul {
   list-style: none;
 }
-.nav__link {
-  text-decoration: none;
-  color: #596554;
-}
-.nav__logo {
-  color: #596554;
 
+a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.section {
+  padding: 4.5rem 0 2.5rem;
+}
+
+/* ========= HEADER ========= */
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: transparent;
+}
+
+/*  ======== NAV ========== */
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--black-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.nav__toogle {
+  color: red;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav__menu {
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    background-color: var(--body-color);
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100%;
+    box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+    padding: 3rem;
+    transition: 0.4s;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.nav__link {
+  color: var(--nav-color);
+  font-weight: var(--font-semi-bold);
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  color: var(--nav-color-2);
+}
+
+/* Active link */
+.active-link {
+  position: relative;
+  color: var(--title-color);
+}
+
+.active-link::before {
+  content: "";
+  position: absolute;
+  background-color: var(--title-color);
+  width: 100%;
+  height: 2px;
+  bottom: -0.75rem;
+  left: 0;
 }
 
 /* ========= IMAGE ========= */
 
 .img {
   width: 65%;
-  height: auto;
 }
 
 /* ========= TABLE ========= */
