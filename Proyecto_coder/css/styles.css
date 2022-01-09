@@ -150,7 +150,7 @@ img {
 /* Active link */
 .active-link {
   position: relative;
-  color: var(--title-color);
+  color: #FF5733;
 }
 
 .active-link::before {
