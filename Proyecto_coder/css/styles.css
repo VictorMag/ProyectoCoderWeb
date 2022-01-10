@@ -54,6 +54,7 @@
 
 html {
   scroll-behavior: smooth;
+
 }
 
 body {
@@ -86,7 +87,29 @@ img {
 .main {
   overflow-x: hidden;
 }
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 4.5rem 0 2.5rem;
+}
 
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: var(--mb-2);
+}
+
+.container {
+  max-width: 968px;
+  margin-left: var(--mb-1);
+  margin-right: var(--mb-1);
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
 
 
 
@@ -198,6 +221,7 @@ img {
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-2-5);
+  
 }
 
 .home__social {
@@ -227,32 +251,95 @@ img {
   display: block;
 border-radius: 25px;
 height: 580px;
-width: 86%;
+width: 64%;
 margin-left: auto;
 margin-right: auto;
 
 }
 
 /* ========= SLOGAN ========= */
-.slogan{
+.sloganPhrase{
   background-color: var(--nav-color-2);
-  height: 138vh;
-  /* position: relative;
-  text-align: center; */
+  
+}
+
+.sloganContainer{
+  align-items: center;
+  height: 700px;
+}
+
+.sloganData {
+  text-align: center;
+}
+
+.sloganData {
+  row-gap: 2.5rem;
 }
 
 .subtitleText{
-  /* position: absolute; */
-  top: 10px;
-  left: 10px;
-}
-.slogan .img{
   
-  height: 450px;
+  text-align: center;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color-2);
+  letter-spacing: 13px;
+  padding-bottom: 50px;
+}
+.imgSlogan .img{
+  padding-left: 650px;
   display:block;
   margin-right: auto;
   margin-left: auto;
+  height: 450px;
 }
+
+.titleImg{
+  position: absolute;
+  top:210%;
+  left: 40.5%;
+  transform: translate(-50%, -50%);
+  color: var(--title-color-2);
+  font-size: 5rem;
+  font-weight: var(--font-bold);  
+}
+
+/* ========= STAFF ========= */
+
+.staffGroup{
+  height: 100vh;
+  background-color: royalblue;
+}
+
+.staffContainer{
+  row-gap: 2.5rem;
+  align-items: center;
+  
+  background-color: red;
+}
+
+.subtitleStaff{
+  padding-top: 127px;
+  text-align: center;
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color-1);
+  letter-spacing: 10px;
+  padding-bottom: 50px;
+}
+
+.titleStaff{
+  text-align: center;
+  color: var(--title-color-1);
+  font-size: 5rem;
+  font-weight: var(--font-bold); 
+  line-height: 1px; 
+}
+
+.staffDescription{
+  margin-bottom: var(--mb-2);
+  
+  text-align: center;
+}
+
+
 /* ========= TABLE ========= */
 
 table {
