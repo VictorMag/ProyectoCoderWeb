@@ -33,6 +33,7 @@
 
   /* ======= FONT WEIGHT ======= */
   --font-medium: 200;
+  --font-semi-med:300;
   --font-semi-bold: 600;
   --font-bold: 1000;
   --normal-font-size: 1rem;
@@ -58,7 +59,7 @@ html {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -113,54 +114,49 @@ img {
 
 /* ========= HEADER ========= */
 
-.header {
-  width: 100%;
-  position: fixed;
-  top: 20px;
-  left: 23%;
-  z-index: var(--z-fixed);
-  background-color: transparent;
-}
-
-.nav{
-  position: fixed;
+header{
   display: flex;
-  align-items: center;
-  justify-content: space-between;    
-  width: 55%;
-  z-index: 999;
-  padding: 5px 0;
-}
-
-.nav__item {
-  display: inline-block;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
+  padding: 21.5px 10%;
+  /* background-color: salmon; */
 }
-/* .nav__menu {
-  display: flex;
-  column-gap: 10rem;
-  position: relative;
-} */
 
-.nav__list {
-  display: flex;
-  flex-direction: row;
-  column-gap: 4rem;
-  font-size: 12px;
-} 
+.nav__list li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.navButton{
+  border-radius: 15%;
+  padding: 0.8rem 0.9rem;
+  background-color: #100000;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #100000;
+  color: var(--body-color);
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.navButton:hover{
+  background-color: var(--body-color);
+  transition: all 0.4s ease;
+  border-color: var(--black-color);
+  border-style: solid;
+  color: #FF5733;
+}
 
 .nav__logo {
   color: var(--black-color);
   font-weight: var(--font-semi-bold);
 }
 
-
-
 .nav__link {
   color: var(--nav-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .nav__link:hover {
@@ -334,8 +330,9 @@ margin-right: auto;
   background-image: url('/img/Staff.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: right;
-  background-size: 44% 100%;
+  background-position: right ;
+  height: 600px;
+  background-size: contain;
   opacity: 0.65;
 }
 
