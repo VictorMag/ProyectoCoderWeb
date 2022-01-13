@@ -119,7 +119,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 21.5px 10%;
-  /* background-color: salmon; */
+  
 }
 
 .nav__list li{
@@ -147,21 +147,36 @@ header{
   color: #FF5733;
 }
 
-.nav__logo {
+.nav__logo{
   color: var(--black-color);
   font-weight: var(--font-semi-bold);
 }
 
-.nav__link {
+.nav__link, .subLink {
   color: var(--nav-color);
   font-weight: var(--font-semi-bold);
   text-transform: uppercase;
   font-size: 12px;
 }
 
+.nav__link{
+  display: block;
+  padding: 20px;
+}
+
 .nav__link:hover {
   color: #FF5733;
   transition: all 1s ease;
+}
+
+/* ========= SUB-MENU =========== */
+
+.subMenu{
+  display: none;
+}
+
+.header .nav__list .nav__item .nav__link:hover + .subMenu, .header .subMenu:hover{
+  display: block;
 }
 
 /* Active link */
