@@ -17,7 +17,7 @@
 
   --body-font: "Monserrat", sans-serif;
   --title-font: "Work Sans", sans-serif;
-  --biggest-font-size: 2.5rem;
+  --biggest-font-size: 5rem;
   --h1-font-size: 1.8rem;
 
   /*========== Margenes Bottom ==========*/
@@ -200,7 +200,7 @@ nav {
 
 .subLink {
   display: block;
-  padding: 10px;
+  padding-top: 10px;
   background-color: var(--body-color);
 }
 
@@ -226,48 +226,44 @@ nav {
 }
 
 /* ========= HOME ========== */
-.home__container {
-  position: relative;
+
+.home {
   height: 80vh;
-  align-content: center;
-  grid-template-rows: 1.8fr 0.5fr;
-  row-gap: 3rem;
+}
+.homeContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.2fr 0.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "homeData"
+    "homeSocial";
 }
 
-.home__data-subtitle {
-  display: block;
-  font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-0-75);
-}
-
-.home__social-link {
-  color: var(--black-color);
-}
-
-.home__data {
-  align-self: flex-end;
-}
-
-.home__data-subtitle {
-  display: block;
-  font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-0-75);
+.homeData {
+  grid-area: homeData;
 }
 
 .home__data-title {
-  padding: 10% 0 0 20%;
+  padding: 5% 0 0 13%;
   font-size: var(--biggest-font-size);
   font-weight: var(--font-bold);
   margin-bottom: var(--mb-2-5);
 }
 
-.home__social {
-  padding: 4% 0 0 20%;
+.homeSocial {
+  grid-area: homeSocial;
+  padding: 3.4% 0 0 13%;
   display: flex;
-  align-self: flex-end;
-  flex-direction: row;
-  column-gap: 5px;
-  margin-bottom: 3rem;
+}
+
+.home__data-subtitle {
+  letter-spacing: 3px;
+  display: block;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-75);
 }
 
 .icons {
@@ -275,92 +271,17 @@ nav {
 }
 
 .home__social-link {
+  color: var(--black-color);
   font-size: 1.2rem;
   width: max-content;
 }
 
-/* ========  MEDIA ========= */
-
-.video .img {
-  display: block;
-  border-radius: 25px;
-  height: 580px;
-  width: 64%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ======= GRID SLOGAN ========== */
-
-.contentBox {
+/* ============ MIDDLE IMG ============ */
+.imgMiddle {
   height: 100vh;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1.6fr 0.7fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "imgContent buttonSlogan";
 }
 
-.imgContent {
-  grid-area: imgContent;
-}
-
-.buttonSlogan {
-  display: flex;
-  align-items: center;
-  grid-area: buttonSlogan;
-  background-color: var(--nav-color-2);
-}
-
-button {
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.buttonImgSlogan {
-  background-color: var(--nav-color-2);
-  color: var(--title-color-2);
-  border: 2px solid var(--sub-title-color);
-}
-
-.buttonImgSlogan:hover {
-  background-color: #555555;
-  color: white;
-}
-
-/* ======== BOTH IMAGE AND SLOGAN ========= */
-.gridLetters {
-  height: 200vh;
-}
-
-.contentElements {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "imageGrid"
-    "sloganSection";
-}
-
-.imageGrid {
-  grid-area: imageGrid;
-}
-
-.imageGrid .img {
+.imgMiddle .img {
   position: relative;
   display: block;
   border-radius: 25px;
@@ -380,22 +301,39 @@ button {
   background-color: var(--nav-color-2);
 }
 
-/* ========= SLOGAN ========= */
-
+/* ============ SLOGAN ================ */
 .sloganSection {
-  grid-area: sloganSection;
-  background-color: var(--nav-color-2);
+  height: 100vh;
 }
 
 .sloganContainer {
-  align-items: center;
-  height: 700px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "imgSlogan buttonSlogan";
+}
+
+.imgSlogan {
+  grid-area: imgSlogan;
+  background-color: var(--nav-color-2);
+  height: 64.9%;
 }
 
 .sloganData {
   text-align: center;
   row-gap: 2.5rem;
   padding-top: 5%;
+  /* height: 100%; */
+}
+
+.imgSlogan .img {
+  display: block;
+  margin-right: 3%;
+  margin-left: auto;
+  height: 450px;
 }
 
 .subtitleText {
@@ -404,20 +342,43 @@ button {
   letter-spacing: 13px;
   padding: 5% 0 0 11.5%;
 }
-.imgSlogan .img {
-  display: block;
-  margin-right: 3%;
-  margin-left: auto;
-  height: 450px;
-}
 
 .titleImg {
   position: relative;
   bottom: 450px;
-  left: 10%;
+  left: 8.5%;
   color: var(--title-color-2);
   font-size: 5rem;
   font-weight: var(--font-bold);
+}
+
+.buttonSlogan {
+  grid-area: buttonSlogan;
+  background-color: var(--nav-color-2);
+  height: 64.9%;
+  display: flex;
+  align-items: center;
+}
+
+.buttonImgSlogan {
+  z-index: 100;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: var(--nav-color-2);
+  color: var(--title-color-2);
+  border: 2px solid var(--sub-title-color);
+}
+
+.buttonImgSlogan:hover {
+  background-color: #555555;
+  color: white;
 }
 
 /* ========= STAFF ========= */
@@ -437,6 +398,31 @@ button {
 .leftBox {
   padding-top: 11%;
   width: 41%;
+}
+
+.buttonLeaders {
+  padding: 10% 0 0 30%;
+}
+
+.buttonLead {
+  /* align-items: center; */
+  background-color: var(--nav-color-2);
+  color: var(--title-color-2);
+  border: 2px solid var(--nav-color-2);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.buttonLead:hover {
+  background-color: var(--body-color);
+  color: var(--nav-color-2);
 }
 
 .rightBox {
@@ -579,95 +565,4 @@ td {
 
 .title {
   color: #596554;
-}
-
-/*  =========== RESPONSIVE DESIGN ============ */
-@media only screen and (min-width: 320px) {
-  .nav {
-    display: none;
-  }
-
-  .imageGrid {
-    /* background-color: violet;
-    opacity: 0.65; */
-    height: 50%;
-  }
-  .imageGrid .img {
-    position: relative;
-    display: block;
-    border-radius: 25px;
-    height: 400px;
-    /* width: 64%; */
-    margin-left: auto;
-    margin-right: 30%;
-  }
-
-  /* ======= GRID SLOGAN ========== */
-
-  .contentBox {
-    display: grid;
-    grid-template-columns: 1.8fr;
-    grid-template-rows: 1.2fr 0.8fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "imgContent"
-      "buttonSlogan";
-  }
-
-  .imgContent {
-    grid-area: imgContent;
-  }
-
-  .buttonSlogan {
-    grid-area: buttonSlogan;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: var(--nav-color-2);
-  }
-
-  .subtitleText {
-    font-size: 12px;
-    letter-spacing: 10px;
-  }
-  .imgSlogan .img {
-    display: block;
-    margin-top: 25%;
-    margin-right: 0;
-    margin-left: auto;
-    height: 400px;
-  }
-  .titleImg {
-    text-align: left;
-    position: relative;
-    bottom: 400px;
-    margin-top: 25%;
-    left: -0.5%;
-    color: var(--title-color-2);
-    font-size: 3rem;
-    font-weight: var(--font-bold);
-  }
-  button {
-    border: none;
-    color: white;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 10px;
-    margin: 2px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  .home__container {
-    background-color: var(--body-color);
-  }
-}
-
-@media only screen and (min-width: 600px) {
 }

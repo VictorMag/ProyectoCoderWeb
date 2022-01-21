@@ -1,0 +1,138 @@
+/*  =========== RESPONSIVE DESIGN ============ */
+@media only screen and (min-width: 320px) {
+  .nav {
+    display: none;
+  }
+
+  .imageGrid {
+    /* background-color: violet;
+      opacity: 0.65; */
+    height: 50%;
+  }
+  .imageGrid .img {
+    position: relative;
+    display: block;
+    border-radius: 25px;
+    height: 400px;
+    /* width: 64%; */
+    margin-left: auto;
+    margin-right: 30%;
+  }
+
+  /* ======= GRID SLOGAN ========== */
+
+  .contentBox {
+    display: grid;
+    grid-template-columns: 1.8fr;
+    grid-template-rows: 1.2fr 0.8fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imgContent"
+      "buttonSlogan";
+  }
+
+  .imgContent {
+    grid-area: imgContent;
+  }
+
+  .buttonSlogan {
+    grid-area: buttonSlogan;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--nav-color-2);
+  }
+
+  .subtitleText {
+    font-size: 12px;
+    letter-spacing: 10px;
+  }
+  .imgSlogan .img {
+    display: block;
+    margin-top: 25%;
+    margin-right: 0;
+    margin-left: auto;
+    height: 400px;
+  }
+  .titleImg {
+    text-align: left;
+    position: relative;
+    bottom: 400px;
+    margin-top: 25%;
+    left: -0.5%;
+    color: var(--title-color-2);
+    font-size: 3rem;
+    font-weight: var(--font-bold);
+  }
+  button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .home__container {
+    background-color: var(--body-color);
+  }
+  /* ========= STAFF ========= */
+  .staffContainer {
+    display: grid;
+    grid-template-columns: 1.8fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "leftBox"
+      "rightBox";
+  }
+
+  .leftBox {
+    width: 100%;
+    grid-area: leftBox;
+  }
+
+  .rightBox {
+    width: 100%;
+    opacity: 0.65;
+    grid-area: rightBox;
+  }
+  .subtitleStaff {
+    text-align: left;
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color-1);
+    letter-spacing: 10px;
+    padding-left: 11.7%;
+  }
+  .titleStaff {
+    text-align: left;
+    color: var(--title-color-1);
+    font-size: 5rem;
+    font-weight: var(--font-bold);
+    padding-left: 0%;
+  }
+  .staffDescription {
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
+    font-size: 1.2rem;
+    word-spacing: 9.5px;
+    line-break: 20px;
+    line-height: 150%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .footerSection {
+    background-color: yellow;
+  }
+}
