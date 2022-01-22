@@ -333,7 +333,8 @@ nav {
   display: block;
   margin-right: 3%;
   margin-left: auto;
-  height: 450px;
+  height: 500px;
+  border-radius: 10px;
 }
 
 .subtitleText {
