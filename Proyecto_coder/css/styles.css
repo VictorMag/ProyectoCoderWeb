@@ -19,6 +19,7 @@
   --title-font: "Work Sans", sans-serif;
   --biggest-font-size: 5rem;
   --medium-font-size: 3rem;
+  --small-font-size: 2rem;
   --h1-font-size: 1.8rem;
 
   /*========== Margenes Bottom ==========*/
@@ -1014,6 +1015,7 @@ nav {
 }
 
 .css-box-shadow2 {
+  cursor: pointer;
   border-radius: 10px;
   width: 295px;
   height: 295px;
@@ -1030,6 +1032,7 @@ nav {
 }
 
 .css-box-shadow3 {
+  cursor: pointer;
   border-radius: 10px;
   width: 295px;
   height: 295px;
@@ -1046,10 +1049,18 @@ nav {
 }
 
 .boxTitle {
+  padding: 28% 0 0 8%;
   color: var(--body-color);
-  font-size: 50px;
+  font-size: 2rem;
+  font-weight: var(--font-bold);
 }
 
 .boxSubtitle {
+  padding: 10% 0 0 8%;
   color: #d2d2d2;
+  letter-spacing: 2px;
+  font-size: 12px;
+  display: block;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-75);
 }
