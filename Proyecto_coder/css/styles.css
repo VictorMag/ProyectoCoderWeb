@@ -1067,27 +1067,161 @@ nav {
 }
 
 .sloganTitle {
-  background-color: teal;
   grid-area: sloganTitle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slogan-title {
+  padding-top: 10%;
   color: var(--title-color-1);
   font-size: var(--medium-font-size);
   font-weight: var(--font-bold);
 }
 
 .sloganSubtitle {
-  color: #d2d2d2;
+  color: #6d6969;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 0.9rem;
   display: block;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .groupsButtons {
-  background-color: tomato;
+  /* background-color: tomato; */
   grid-area: groupsButtons;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 30%;
+  /* justify-content: space-evenly; */
+  /* align-items: center; */
+}
+
+.button-group-right {
+  padding-left: 10%;
+}
+
+/* =============== RELATIONS SECTION =========== */
+.groupRelations {
+  height: 140vh;
+  /* background-color: tomato; */
+}
+
+.relationsGrid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1.6fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "relationsTop"
+    "relationsBottom";
+}
+
+.relationsTop {
+  grid-area: relationsTop;
+  /* background-color: tomato; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.relationsBottom {
+  grid-area: relationsBottom;
+  /* background-color: tan; */
+  padding: 0 0 0 11%;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.css-box-shadow {
+  width: 310px;
+  height: 640px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.imgGroups {
+  height: 300px;
+  background-image: url(../img/Men3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.groupsMove {
+  padding-left: 2.5%;
+}
+
+.css-box-shadow2 {
+  width: 310px;
+  height: 640px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.imgGroups2 {
+  height: 300px;
+  background-image: url(../img/Women.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.css-box-shadow3 {
+  width: 310px;
+  height: 640px;
+  background: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.imgGroups3 {
+  height: 300px;
+  background-color: tan;
+  /* width: 300px; */
+  background-image: url(../img/Youth.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+
+.gropusMove3 {
+  padding-left: 2.5%;
+}
+
+.relationsTitle {
+  color: var(--title-color-1);
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-bold);
+}
+
+.relationsSubtitle {
+  padding: 1.5% 0 0 0;
+  color: #6d6969;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  /* display: block; */
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-75);
+}
+
+.imgGroupsDetail {
+  max-height: 100%;
+  max-width: 100%;
 }
