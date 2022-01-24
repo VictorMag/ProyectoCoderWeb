@@ -1039,3 +1039,55 @@ nav {
   margin-bottom: var(--mb-0-75);
   padding-top: 10%;
 }
+
+/*  ============= GROUPS HOME ============== */
+.groupsHome {
+  height: 60vh;
+  background-image: url("../img/Groups.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.groups-slogan-container {
+  height: 90vh;
+  /* background-color: teal; */
+}
+
+.groups-grid-slogan {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1.3fr 0.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sloganTitle"
+    "groupsButtons";
+}
+
+.sloganTitle {
+  background-color: teal;
+  grid-area: sloganTitle;
+}
+
+.slogan-title {
+  color: var(--title-color-1);
+  font-size: var(--medium-font-size);
+  font-weight: var(--font-bold);
+}
+
+.sloganSubtitle {
+  color: #d2d2d2;
+  letter-spacing: 2px;
+  font-size: 12px;
+  display: block;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-0-75);
+  padding-top: 10%;
+}
+
+.groupsButtons {
+  background-color: tomato;
+  grid-area: groupsButtons;
+}
