@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- ============== CDN BOOTSTRAP ============ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
     <!--=============== REMIXICONS ===============-->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -63,9 +71,11 @@
           </ul>
         </div>
       </nav>
-      <button class="navButton">
-        <i class="ri-menu-4-fill menu"></i>
-      </button>
+      <div class="nav-button">
+        <button class="navButton">
+          <i class="ri-menu-4-fill menu"></i>
+        </button>
+      </div>
     </header>
     <main class="main">
       <!-- =============== HOME SECTION ============= -->
@@ -74,10 +84,20 @@
           Ways <br />
           To Give
         </div>
-        <div class="giveSubtitle">
-          PARTNER WITH US AT <br />
-          HARVEST CHURCH >>>
+        <div class="slide-right">
+          <div class="giveSubtitle">
+            PARTNER WITH US AT <br />
+            HARVEST CHURCH >>>
+          </div>
         </div>
+
+        <div class="arrowGive">
+          <button class="giveButton">
+            <i class="ri-arrow-right-s-line give-button"></i>
+          </button>
+          GIVE NOW
+        </div>
+
         <div class="slide-in-right">
           <div class="giveImg">
             <img class="give-img" src="../img/Give1.jpg" alt="" />
@@ -89,26 +109,31 @@
       <section class="giveOptions">
         <div class="css-box-shadow1">
           <div class="imgGroups1">
-            <div class="option-img">
-              <img class="optionImg" src="../img/GiveComputer.jpg" alt="" />
-            </div>
+            <img class="optionImg" src="../img/GiveComputer.jpg" alt="" />
+
             <div class="relations-img-title1">Give Online</div>
             <div class="relationsDescription1">
               Simple and secure. Give a single gift, or schedule recurring
               giving using your checking account, debit, or credit card.
+            </div>
+            <div class="arrowGive1">
+              <button class="giveButton1">
+                <i class="ri-arrow-right-s-line give-button"></i>
+              </button>
+              Give Online
             </div>
           </div>
         </div>
 
         <div class="groupsMove4">
           <div class="css-box-shadow4">
+            <img class="optionImg" src="../img/GiveMail.jpg" alt="" />
             <div class="imgGroups4">
-              <img class="optionImg" src="../img/GiveMail.jpg" alt="" />
               <div class="relations-img-title4">Give by Mail</div>
               <div class="relationsDescription4">
                 Make checks payable to: <br />
-                OAKS CHURCH
-                <div class="blackText">
+                <div>
+                  OAKS CHURCH <br />
                   777 S-I35E, Bldg. 4 Red Oak, TX 75154
                 </div>
                 Include your name and address on your check or envelope so that
@@ -124,8 +149,8 @@
               <img class="optionImg" src="../img/GiveText.jpg" alt="" />
               <div class="relations-img-title5">Give by Text</div>
               <div class="relationsDescription5">
-                Text the word GIVE followed by dollar amount to (972) 217-4911.
-                (I.e. GIVE 100) <br /><br />
+                Text the word <span>GIVE</span> followed by dollar amount to
+                (972) 217-4911. (I.e. GIVE 100) <br /><br />
                 For more information on other ways to give, including asset
                 contributions and bank transfers, contact us at
                 give@harvest.church.
@@ -260,5 +285,21 @@
         </div>
       </footer>
     </main>
+    <!-- =============== CDN BOOTSTRAP =============== -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

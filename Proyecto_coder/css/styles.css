@@ -114,7 +114,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 21.5px 10%;
+  padding: 5px 10%;
 }
 
 nav {
@@ -131,7 +131,12 @@ nav {
   position: relative;
 }
 
+.nav-button {
+  padding-bottom: 10%;
+}
+
 .navButton {
+  position: fixed;
   border-radius: 15%;
   padding: 0.8rem 0.9rem;
   background-color: #100000;
@@ -329,7 +334,7 @@ nav {
   position: relative;
   left: 0px;
   width: 100%;
-  height: 13%;
+  height: 14%;
   background-color: var(--nav-color-2);
 }
 
@@ -1184,7 +1189,6 @@ nav {
 
 .imgGroups3 {
   height: 300px;
-  background-color: tan;
   background-image: url(../img/Youth.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -1267,7 +1271,6 @@ nav {
 .giveHome {
   height: 105vh;
   position: relative;
-  /* background-color: #ff5733; */
 }
 
 .giveTitle {
@@ -1276,7 +1279,7 @@ nav {
   font-size: 7rem;
   font-weight: var(--font-bold);
   position: absolute;
-  z-index: 10;
+  z-index: 15;
 }
 
 .giveSubtitle {
@@ -1284,18 +1287,89 @@ nav {
   color: #6d6969;
   letter-spacing: 2px;
   font-size: 0.9rem;
-  font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
   padding: 36% 0 0 15%;
   line-height: 20px;
+  z-index: 14;
+}
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+}
+.slide-right .giveSubtitle {
+  animation: 2s slide-right;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.arrowGive {
+  position: absolute;
+  z-index: 13;
+  padding: 42% 0 0 15%;
+}
+
+.arrowGive:hover {
+  opacity: 0.65;
+  cursor: pointer;
+}
+
+.arrowGive1 {
+  padding: 14% 0 0 30%;
+  font-size: 20px;
+}
+
+.arrowGive1:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.give-button {
+  z-index: 12;
+  padding: 10% 0 0 0;
+}
+
+.giveButton {
+  border-radius: 50%;
+  padding: 0.02rem 0.1rem;
+  background-color: #100000;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #100000;
+  color: var(--body-color);
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
+
+.giveButton1 {
+  border-radius: 50%;
+  padding: 0.02rem 0.1rem;
+  background-color: #100000;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #100000;
+  color: var(--body-color);
+  font-size: 14px;
+  transition-duration: 0.4s;
 }
 
 .giveImg {
   padding: 8% 0 0 36%;
+  z-index: -10;
 }
 
 .give-img {
-  z-index: -10;
+  z-index: -900;
   position: relative;
   border-radius: 10px;
   height: 450px;
@@ -1353,22 +1427,23 @@ nav {
 .css-box-shadow1 {
   width: 290px;
   height: 563px;
-  background: #f8f8f8;
+  background: #d5d3d2;
   border-radius: 5px;
   box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
 }
 
-.option-img {
-  border-radius: 20px;
+.imgGropups {
+  overflow: hidden;
 }
 
 .optionImg {
   width: 272px;
   height: 200px;
-  overflow: hidden;
-  padding: 20% 0 0 7%;
+  border-radius: 10px;
+  margin: 10% 0% 0 3%;
+  /* padding: 20% 0 0 7%; */
 }
 
 .groupsMove4 {
@@ -1378,7 +1453,7 @@ nav {
 .css-box-shadow4 {
   width: 290px;
   height: 563px;
-  background: #f8f8f8;
+  background: #d5d3d2;
   border-radius: 5px;
   box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
@@ -1388,7 +1463,7 @@ nav {
 .css-box-shadow5 {
   width: 290px;
   height: 563px;
-  background: #f8f8f8;
+  background: #d5d3d2;
   border-radius: 5px;
   box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
@@ -1400,34 +1475,31 @@ nav {
 }
 
 .relations-img-title1 {
-  letter-spacing: 3px;
-  padding: 14% 0 0 15%;
-  color: #6d6969;
+  padding: 14% 0 0 18%;
+  color: #1a1b1b;
   font-size: 1.8rem;
-  font-weight: var(--font-semi-bold);
+  font-weight: 1000;
   margin-bottom: var(--mb-0-75);
 }
 
 .relations-img-title4 {
-  letter-spacing: 3px;
   padding: 14% 0 0 15%;
   font-size: 1.8rem;
-  color: #6d6969;
-  font-weight: var(--font-semi-bold);
+  color: #1a1b1b;
+  font-weight: 1000;
   margin-bottom: var(--mb-0-75);
 }
 
 .relations-img-title5 {
-  letter-spacing: 3px;
   padding: 14% 0 0 15%;
   font-size: 1.8rem;
-  color: #6d6969;
-  font-weight: var(--font-semi-bold);
+  color: #1a1b1b;
+  font-weight: 1000;
   margin-bottom: var(--mb-0-75);
 }
 
 .relationsDescription1 {
-  color: #6d6969;
+  color: #2c2a39;
   font-size: 0.8rem;
   line-height: 1.6;
   word-spacing: 5px;
@@ -1438,7 +1510,7 @@ nav {
 }
 
 .relationsDescription4 {
-  color: #6d6969;
+  color: #2c2a39;
   font-size: 0.8rem;
   line-height: 1.6;
   word-spacing: 5px;
@@ -1449,7 +1521,7 @@ nav {
 }
 
 .relationsDescription5 {
-  color: #6d6969;
+  color: #2c2a39;
   font-size: 0.8rem;
   line-height: 1.6;
   word-spacing: 5px;
