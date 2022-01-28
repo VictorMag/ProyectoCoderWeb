@@ -36,37 +36,70 @@
   <body>
     <!-- =============== HEADER =============== -->
     <header class="header" id="header">
-      <a href="/" class="nav__logo">HARVEST MEXICO</a>
-      <nav class="nav container">
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="../index.html" class="nav__link">Home</a>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="/">HARVEST MEXICO</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html"
+                >HOME <span class="sr-only">(current)</span></a
+              >
             </li>
-            <li class="nav__item">
-              <a href="about.html" class="nav__link active-link">About</a>
-              <ul class="subMenu">
-                <li class="navList"><a href="#" class="subLink">Staff</a></li>
-                <li class="navList"><a href="#" class="subLink">Beliefs</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                ABOUT
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Staff</a>
+                <a class="dropdown-item" href="#">Beliefs</a>
+              </div>
             </li>
-            <li class="nav__item">
-              <a href="connect.html" class="nav__link">Connect</a>
-              <ul class="subMenu">
-                <li class="navList">
-                  <a href="#" class="subLink">Visit Harvest</a>
-                </li>
-                <li class="navList">
-                  <a href="#" class="subLink">Welcome Lunch</a>
-                </li>
-                <li class="navList"><a href="#" class="subLink">Groups</a></li>
-              </ul>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                CONNECT
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="#">Visit Harvest</a>
+                <a class="dropdown-item" href="#">Welcome Lunch</a>
+              </div>
             </li>
-            <li class="nav__item">
-              <a href="groups.html" class="nav__link">Groups</a>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/groups.html">GROUPS</a>
             </li>
-            <li class="nav__item">
-              <a href="give.html" class="nav__link">Give</a>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/give.html">GIVE</a>
             </li>
           </ul>
         </div>
@@ -94,28 +127,28 @@
             </div>
           </div>
           <div class="aboutButtons">
-            <a class="buttonMore" href="#">
+            <a class="buttonMore text-decoration-none" href="#">
               <span class="top-key"></span>
               <span class="text">LEAD</span>
               <span class="bottom-key-1"></span>
               <span class="bottom-key-2"></span>
             </a>
 
-            <a class="buttonMore" href="#">
+            <a class="buttonMore text-decoration-none" href="#">
               <span class="top-key"></span>
               <span class="text">OUR STAFF</span>
               <span class="bottom-key-1"></span>
               <span class="bottom-key-2"></span>
             </a>
 
-            <a class="buttonMore" href="#">
+            <a class="buttonMore text-decoration-none" href="#">
               <span class="top-key"></span>
               <span class="text">MINISTRIES</span>
               <span class="bottom-key-1"></span>
               <span class="bottom-key-2"></span>
             </a>
 
-            <a class="buttonMore" href="#">
+            <a class="buttonMore text-decoration-none" href="#">
               <span class="top-key"></span>
               <span class="text">OUR BELIEFS</span>
               <span class="bottom-key-1"></span>
