@@ -1200,7 +1200,7 @@ header {
 /* =============== GIVE SECTION =========== */
 
 .giveHome {
-  height: 105vh;
+  margin-bottom: 10%;
   position: relative;
 }
 
@@ -1294,6 +1294,10 @@ header {
   transition-duration: 0.4s;
 }
 
+.giveButton1:hover {
+  opacity: 0.65;
+}
+
 .giveImg {
   padding: 8% 0 0 36%;
   z-index: -10;
@@ -1374,7 +1378,6 @@ header {
   height: 200px;
   border-radius: 10px;
   margin: 10% 0% 0 3%;
-  /* padding: 20% 0 0 7%; */
 }
 
 .groupsMove4 {
@@ -1460,4 +1463,213 @@ header {
   text-align: justify;
   font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-0-75);
+}
+
+.testBo {
+  padding: 2%;
+  margin: 2%;
+}
+
+.prinContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.one {
+  height: 35rem;
+  background-color: #d5d3d2;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.two {
+  background-color: #d5d3d2;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.three {
+  z-index: -10;
+
+  background-color: #d5d3d2;
+  border-radius: 5px;
+  box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+}
+
+.giveimg1 {
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 11rem;
+  width: 16rem;
+}
+
+.give-box-title {
+  font-size: 35px;
+  margin: 20px 0 0 27px;
+}
+
+.give-box-text {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.giveimg2 {
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 11rem;
+  width: 16rem;
+}
+
+.give-box-title2 {
+  font-size: 35px;
+  margin: 20px 0 0 27px;
+}
+
+.give-box-text2 {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.giveimg3 {
+  margin-top: 50px;
+  border-radius: 20px;
+  height: 11rem;
+  width: 16rem;
+}
+
+.give-box-title3 {
+  font-size: 35px;
+  margin: 20px 0 0 27px;
+}
+
+.give-box-text3 {
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.checks {
+  padding-left: 40px;
+}
+
+.harvest {
+  padding-top: 15px;
+  padding-left: 65px;
+}
+
+.direction {
+  font-weight: 800;
+  font-size: 15px;
+
+  text-align: center;
+}
+
+.box3,
+.box3-1,
+.email {
+  font-weight: 800;
+}
+
+.arrow-give {
+  font-size: 20px;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.button-text {
+  transition: 0.3s;
+}
+
+.button-text:hover {
+  cursor: pointer;
+  opacity: 0.65;
+  transition: 0.3s ease;
+}
+
+/* ==== MEDIA RESPONSIVE ======= */
+
+@media (max-width: 768px) {
+  .giveTitle {
+    font-size: 4rem;
+    padding: 50% 0 0 20%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .giveImg {
+    padding: 8% 0 0 10%;
+    z-index: -10;
+  }
+
+  .give-img {
+    height: 300px;
+    width: 650px;
+  }
+  .arrowGive {
+    position: absolute;
+    z-index: 13;
+    padding: 85% 0 0 60%;
+  }
+
+  .giveHome {
+    margin-top: 15%;
+    margin-bottom: 20%;
+  }
+
+  .giveSubtitle {
+    font-size: 0.9rem;
+    padding: 2% 0 0 5%;
+  }
+
+  .navButton {
+    display: none;
+  }
+
+  /* ========== FOOTER ======== */
+  .footerData1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerData2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerData3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerData4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerData5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerData6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
