@@ -1672,4 +1672,8 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+
+  .collapse {
+    padding-left: 0%;
+  }
 }
