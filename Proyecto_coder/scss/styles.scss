@@ -1,0 +1,28 @@
+@import "./reset";
+@import "./variables";
+
+body {
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
+}
+
+h1 {
+  color: $title-color-1;
+  font-family: $title-font;
+  font-weight: $font-bold;
+}
+
+//  BOOTSTRAP NAVBAR
+
+.navbar {
+  .nav-item {
+    .nav-link {
+      color: $black-color;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+}
