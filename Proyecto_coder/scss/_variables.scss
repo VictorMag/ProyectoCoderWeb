@@ -18,20 +18,25 @@ $nav-color-2: #2d2d2d;
 
 /* ========= FONT & TYPO =========== */
 
+$font-sizes: (
+  "smallest": 0.8em,
+  "small": 16px,
+  "normal": 1.5em,
+  "medium": 1.7em,
+  "big": 2em,
+);
+
 $body-font: "Monserrat", sans-serif;
 $title-font: "Work Sans", sans-serif;
-$biggest-font-size: 5rem;
-$medium-font-size: 3rem;
-$small-font-size: 2rem;
-$h1-font-size: 1.8rem;
 
 /* ======= FONT WEIGHT ======= */
-$font-medium: 200;
-$font-semi-med: 300;
-$font-semi-bold: 600;
-$font-bold: 1000;
-$normal-font-size: 1rem;
-$small-font-size: 0.8rem;
+
+$font-weights: (
+  "small": 200,
+  "regular": 300,
+  "medium": 600,
+  "bold": 1000,
+);
 
 /*========== Margenes Bottom ==========*/
 $mb-0-25: 0.25rem;

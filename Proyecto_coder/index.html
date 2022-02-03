@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- ============== CDN BOOTSTRAP ============ -->
     <link
       rel="stylesheet"
@@ -47,13 +46,12 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- =============== CSS =============== -->
-    <link rel="stylesheet" href="./css/test.css" />
-
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Harvest Mexico | No One Walks Alone</title>
   </head>
   <body>
-    <!-- =============== HEADER =============== -->
-    <header class="header" id="header">
+    <main class="main">
+      <!-- ========= BOOTSTRAP NAVBAR =========== -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="/">HARVEST MEXICO</a>
         <button
@@ -122,32 +120,22 @@
           </ul>
         </div>
       </nav>
-      <div class="nav-button">
-        <button class="navButton">
-          <i class="ri-menu-4-fill menu"></i>
-        </button>
-      </div>
-    </header>
 
-    <main class="main">
-      <!-- =============== HOME =============== -->
-      <section class="home">
-        <div class="homeContainer">
-          <div class="homeData">
+      <!-- ========= HOME SECTION ============ -->
+      <section class="home section">
+        <div class="home__container">
+          <div class="home__text">
             <div class="text-focus-in">
-              <h1 class="home__data-title">
-                We are here. <br />
-                Anything is possible!
-              </h1>
+              We are here. <br />
+              Anything is possible!
             </div>
           </div>
-
-          <div class="text-focus-in">
-            <div class="homeSocial">
-              <span class="home__data-subtitle">
-                JOIN US SUNDAY AT 9 + 10:30 AM ONLINE OR IN-PERSON!
-              </span>
-              <div class="icons">
+          <div class="home__text__subtitle">
+            <div class="text-focus-in">
+              JOIN US SUNDAY AT 9 + 10:30 AM ONLINE OR IN-PERSON!
+            </div>
+            <div class="home__icons">
+              <div class="text-focus-in">
                 <a
                   href="https://www.facebook.com/"
                   target="_blank"
@@ -175,213 +163,76 @@
         </div>
       </section>
 
-      <!-- ================ MIDDLE IMAGE ============= -->
-      <section class="imgMiddle">
-        <img src="./img/service1.jpg" alt="Service" class="img" />
-        <div class="backgGround"></div>
+      <!-- ======= MIDDLE IMAGE =========== -->
+      <section class="img">
+        <img src="./img/Service1.jpg" alt="" class="img__middle" />
+        <div class="img__background"></div>
       </section>
 
-      <!-- ================ SLOGAN ================ -->
-      <section class="sloganSection">
-        <div class="sloganContainer">
-          <div class="imgSlogan">
-            <div class="tracking-in-expand">
-              <div class="subtitleText">
-                <p>AT HARVEST > > ></p>
-              </div>
-            </div>
-
-            <div class="sloganData">
-              <img src="./img/Slogan.jpg" alt="" class="img" />
-              <div class="titleImg">
-                <p>NO</p>
-                <p>ONE</p>
-                <p>WALKS</p>
-                <p>ALONE!</p>
-              </div>
+      <!-- ======== SLOGAN ========== -->
+      <section class="slogan">
+        <div class="slogan__container">
+          <div class="slogan__img">
+            <div class="slogan__text">AT HARVEST > > ></div>
+            <img src="./img/Slogan.jpg" alt="" class="slogan__img__button" />
+            <div class="slogan__title">
+              NO <br />
+              ONE <br />
+              WALKS <br />
+              ALONE
             </div>
           </div>
-
-          <div class="buttonSlogan">
-            <div class="button-more-slogan">
-              <a class="buttonMoreSlogan text-decoration-none" href="#">
-                <span class="top-slogan"></span>
-                <span class="textSlogan">VISIT HARVEST</span>
-                <span class="bottom-key-slogan-1"></span>
-                <span class="bottom-key-slogan-2"></span>
-              </a>
-            </div>
+          <div class="slogan__button">
+            <a class="buttonMoreSlogan text-decoration-none" href="#">
+              <span class="top-slogan"></span>
+              <span class="textSlogan">VISIT HARVEST</span>
+              <span class="bottom-key-slogan-1"></span>
+              <span class="bottom-key-slogan-2"></span>
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- =============== STAFF =============== -->
-      <section class="staffGroup section">
-        <div class="staffContainer container grid">
-          <div class="leftBox">
-            <div class="subtitleStaff">
-              MEET OUR > > >
-              <div class="titleStaff">STAFF</div>
-            </div>
-            <p class="staffDescription">
+      <!-- ======== STAFF SECTION ======== -->
+      <section class="staff">
+        <div class="staff__container">
+          <div class="staff__left__container">
+            <div class="staff__left__container__subtitle">MEET OUR > > ></div>
+            <div class="staff__left__container__title">STAFF</div>
+            <p class="staff__left__container__description">
               Chris and Cara Railey are the Lead Staff at Harvest located in Mex
               City. They’ve been in full-time ministry for over 20 years. Chris
               and Cara have a rich history with Harvest, going back 13 years
               when they were the first directors of Harvest College.
             </p>
-
-            <div class="buttonStaff">
-              <a class="buttonMore text-decoration-none" href="#">
-                <span class="top-key"></span>
+            <div class="staff__left__container__button">
+              <a class="buttonMoreSlogan text-decoration-none" href="#">
+                <span class="top-slogan"></span>
                 <span class="text">LEARN MORE</span>
-                <span class="bottom-key-1"></span>
-                <span class="bottom-key-2"></span>
+                <span class="bottom-key-slogan-1"></span>
+                <span class="bottom-key-slogan-2"></span>
               </a>
             </div>
           </div>
-
-          <div class="rightBox">
-            <img src="./img/Staff.jpg" class="staffImg" alt="" />
-            <img src="./img/Staff.jpg" class="staffImg2" alt="" />
+          <div class="staff__right__container">
+            <img
+              src="./img/Staff.jpg"
+              class="staff__right__container__img1"
+              alt=""
+            />
+            <img
+              src="./img/Staff.jpg"
+              class="staff__right__container__img2"
+              alt=""
+            />
           </div>
         </div>
       </section>
 
-      <!-- =============== FOOTER =============== -->
-      <footer class="footerSection">
-        <div class="footerContainer">
-          <div class="footerData1">
-            <div class="footerTitle">
-              <h3 class="footerSubtitle">About</h3>
-            </div>
-            <ul>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Staff</a>
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Beliefs</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footerData2">
-            <div class="footerTitle">
-              <h3 class="footerSubtitle text-decoration-none">Connect</h3>
-            </div>
-            <ul>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none"
-                  >Visit Harvest</a
-                >
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none"
-                  >Welcome Lunch</a
-                >
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Groups</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footerData3">
-            <div class="footerTitle">
-              <h3 class="footerSubtitle text-decoration-none">Groups</h3>
-            </div>
-            <ul>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Kids</a>
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Youth</a>
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Women</a>
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">Worship</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="footerData4">
-            <div class="footerTitle">
-              <h3 class="footerSubtitle">Give</h3>
-            </div>
-            <ul>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none">GIVE</a>
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none"
-                  >Request Prayer</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="footerData5">
-            <div class="footerSocial">
-              <div class="footerLeft">
-                <img class="imgFooter" src="./img/Orange.png" alt="" />
-              </div>
-              <div class="footerRight">
-                <div class="rights">/2022</div>
-                <div class="iconsFooter">
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    class="footerIcon text-decoration-none"
-                  >
-                    <i class="ri-facebook-fill"></i>
-                  </a>
-                  <a
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                    class="footerIcon text-decoration-none"
-                  >
-                    <i class="ri-instagram-line"></i>
-                  </a>
-                  <a
-                    href="https://youtube.com/"
-                    target="_blank"
-                    class="footerIcon text-decoration-none"
-                  >
-                    <i class="ri-youtube-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="footerLast">Harvest</div>
-            <p class="footerDescription">
-              A loving community. <br />
-              1213 North Main St P.O Box 288 Madison, NE 68748 <br />
-              402-454-2896
-            </p>
-          </div>
-
-          <div class="footerData6">
-            <div class="footerTitle">
-              <h3 class="footerSubtitle">MEDIA</h3>
-            </div>
-            <ul>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none"
-                  >Media Library</a
-                >
-              </li>
-              <li class="footerItem">
-                <a href="" class="footerLink text-decoration-none"
-                  >Watch Live</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      <!-- ======== END MAIN =========== -->
     </main>
+
+    <!-- ========= BOOTSTRAP JS ============ -->
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
