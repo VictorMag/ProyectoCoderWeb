@@ -363,6 +363,7 @@ h1 {
   .slogan {
     height: 100vh;
     background-color: $nav-color-2;
+    background-color: wheat;
 
     &__container {
       height: 100%;
@@ -377,10 +378,24 @@ h1 {
     &__img {
       grid-area: slogan__img;
 
+      .slogan__text {
+        color: $title-color-2;
+      }
+
+      .slogan__title {
+        position: relative;
+        margin: auto 0;
+        top: -30%;
+        font-weight: weight(bold);
+        font-size: size(big);
+        color: $title-color-2;
+      }
+
       &__button {
         display: block;
-        margin: 0 auto;
-        height: 15em;
+        margin-top: 5em;
+        margin-left: 5.3em;
+        height: 20em;
       }
     }
 
@@ -388,6 +403,7 @@ h1 {
       grid-area: slogan__button;
       @include buttonDark;
       @include flexCenter(column);
+      background-color: tomato;
     }
   }
 

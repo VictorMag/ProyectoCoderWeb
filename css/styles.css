@@ -76,15 +76,19 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .img__background { position: relative; z-index: -1; height: 12vh; background-color: #2d2d2d; top: -7%; }
 
-.main .slogan { height: 100vh; background-color: #2d2d2d; }
+.main .slogan { height: 100vh; background-color: #2d2d2d; background-color: wheat; }
 
 .main .slogan__container { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1.2fr 0.8fr; grid-template-columns: 1.2fr 0.8fr; -ms-grid-rows: 1fr; grid-template-rows: 1fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "slogan__img slogan__button"; }
 
 .main .slogan__img { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: slogan__img; }
 
-.main .slogan__img__button { display: block; margin: 0 auto; height: 15em; }
+.main .slogan__img .slogan__text { color: #ffffff; }
 
-.main .slogan__button { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: slogan__button; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.main .slogan__img .slogan__title { position: relative; margin: auto 0; top: -30%; font-weight: 1000; font-size: 2em; color: #ffffff; }
+
+.main .slogan__img__button { display: block; margin-top: 5em; margin-left: 5.3em; height: 20em; }
+
+.main .slogan__button { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: slogan__button; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background-color: tomato; }
 
 .main .slogan__button .buttonMoreSlogan { background-color: transparent; border: 2px solid #f0f0f0; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #f0f0f0; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
 
