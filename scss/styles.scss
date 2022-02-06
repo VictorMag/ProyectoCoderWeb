@@ -382,7 +382,7 @@ h1 {
       .slogan__title {
         position: relative;
         margin: auto 0;
-        margin: 80% 0 0 13%;
+        margin: 80% 0 0 5%;
         font-weight: weight(bold);
         font-size: size(big);
         color: $title-color-2;
@@ -391,16 +391,16 @@ h1 {
       &__button {
         position: absolute;
         display: block;
-        margin-top: 5em;
-        margin-left: 5.3em;
-        height: 40em;
+        margin-top: 5.5em;
+        margin-left: 3em;
+        height: 35em;
       }
     }
 
     &__button {
       @include buttonDark;
       @include flexCenter(column);
-      margin-top: 60%;
+      margin-top: 40%;
     }
   }
 

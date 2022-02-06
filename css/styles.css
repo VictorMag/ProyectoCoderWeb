@@ -84,11 +84,11 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .slogan__img .slogan__text { color: #ffffff; margin-left: 1.5em; }
 
-.main .slogan__img .slogan__title { position: relative; margin: auto 0; margin: 80% 0 0 13%; font-weight: 1000; font-size: 2em; color: #ffffff; }
+.main .slogan__img .slogan__title { position: relative; margin: auto 0; margin: 80% 0 0 5%; font-weight: 1000; font-size: 2em; color: #ffffff; }
 
-.main .slogan__img__button { position: absolute; display: block; margin-top: 5em; margin-left: 5.3em; height: 40em; }
+.main .slogan__img__button { position: absolute; display: block; margin-top: 5.5em; margin-left: 3em; height: 35em; }
 
-.main .slogan__button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 60%; }
+.main .slogan__button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-top: 40%; }
 
 .main .slogan__button .buttonMoreSlogan { background-color: transparent; border: 2px solid #f0f0f0; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #f0f0f0; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
 
