@@ -468,7 +468,7 @@ h1 {
   .footer-03 {
     padding-top: 2em;
     background-color: $nav-color-2;
-    height: 100vh;
+    height: 120vh;
   }
 
   .footer-heading {
@@ -476,6 +476,25 @@ h1 {
   }
 
   .py-1 {
+    color: $body-color;
+  }
+
+  .ftco-footer-social {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .footer__icon {
+    color: $orange-color;
+  }
+
+  .footer__terms {
+    color: $orange-color;
+  }
+
+  .footer__subs__button {
+    background-color: $orange-color;
+    border: $orange-color;
     color: $body-color;
   }
 

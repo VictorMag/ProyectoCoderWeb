@@ -152,11 +152,19 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .staff__right__container__img2 { border-radius: 5px; opacity: 0.65; height: 15em; }
 
-.main .footer-03 { padding-top: 2em; background-color: #2d2d2d; height: 100vh; }
+.main .footer-03 { padding-top: 2em; background-color: #2d2d2d; height: 120vh; }
 
 .main .footer-heading { color: #f0f0f0; }
 
 .main .py-1 { color: #f0f0f0; }
+
+.main .ftco-footer-social { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 1.5em; }
+
+.main .footer__icon { color: #ff5733; }
+
+.main .footer__terms { color: #ff5733; }
+
+.main .footer__subs__button { background-color: #ff5733; border: #ff5733; color: #f0f0f0; }
 
 .main .footerSection { height: 80vh; background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, black), to(#434343)); background: linear-gradient(90deg, #020024 0%, black 35%, #434343 100%); }
 
