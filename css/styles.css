@@ -20,7 +20,7 @@ body { font-family: "Monserrat", sans-serif; font-size: 16px; background-color: 
 
 h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
-.main { /*  ============= GROUPS HOME ============== */ /* =============== RELATIONS SECTION =========== */ /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
+.main { /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
 
 .main .navbar .navbar-brand { font-weight: 300; font-size: 0.8em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -256,41 +256,119 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .connect__btn:hover { background-position: right; }
 
-.main .groupsHome { height: 60vh; background-image: url("../img/Groups.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+.main .groups { height: 60vh; background-image: url("../img/Groups.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-position-x: center; background-size: cover; }
 
-.main .groups-slogan-container { height: 90vh; }
+.main .groups__slogan { height: 60vh; }
 
-.main .groups-grid-slogan { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 1.3fr 0.7fr; grid-template-rows: 1.3fr 0.7fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "sloganTitle" "groupsButtons"; }
+.main .groups__grid__slogan { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "groups__grid__title" "groups__buttons"; }
 
-.main .sloganTitle { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: sloganTitle; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.main .groups__grid__title { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: groups__grid__title; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.main .slogan-title { padding-top: 10%; color: var(--title-color-1); font-size: var(--medium-font-size); font-weight: var(--font-bold); }
+.main .groups__grid__title .tracking-in-expand { -webkit-animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
-.main .sloganSubtitle { color: #6d6969; letter-spacing: 2px; font-size: 0.9rem; line-height: 1.6; display: block; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); padding-top: 5%; }
+@-webkit-keyframes tracking-in-expand { 0% { letter-spacing: -0.5em;
+    opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { opacity: 1; } }
 
-.main .groupsButtons { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: groupsButtons; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding-left: 30%; }
+@keyframes tracking-in-expand { 0% { letter-spacing: -0.5em;
+    opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { opacity: 1; } }
 
-.main .button-group-right { padding-left: 10%; }
+.main .groups__grid__title__card { padding-top: 10%; color: #100000; font-size: 1.7em; font-weight: 600; }
 
-.main .groupRelations { height: 150vh; }
+.main .groups__grid__title__subtitle { color: #6d6969; text-align: justify; letter-spacing: 0.1em; font-size: 16px; line-height: 1.6; font-weight: 600; padding: 5% 3% 0 3%; }
 
-.main .relationsGrid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.4fr 1.6fr; grid-template-rows: 0.4fr 1.6fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "relationsTop" "relationsBottom"; }
+.main .groups__buttons { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: groups__buttons; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; }
 
-.main .relationsTop { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: relationsTop; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.main .groups__buttons__left { color: #ff5733; }
 
-.main .relationsBottom { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: relationsBottom; padding: 0 0 0 11%; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.main .groups__buttons__left .buttonMoreSlogan { background-color: transparent; border: 2px solid #2d2d2d; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2d2d2d; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
 
-.main .css-box-shadow { width: 310px; height: 675px; background: #f8f8f8; border-radius: 5px; box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); }
+.main .groups__buttons__left .buttonMoreSlogan::before { content: " "; width: 1.5625rem; height: 2px; background: #2d2d2d; top: 50%; left: 1.5em; position: absolute; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: center; transform-origin: center; -webkit-transition: background 0.3s linear, width 0.3s linear; transition: background 0.3s linear, width 0.3s linear; }
+
+.main .groups__buttons__left .buttonMoreSlogan .textSlogan { font-size: 1.125em; line-height: 1.33333em; padding-left: 2em; display: block; text-align: left; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: uppercase; text-decoration: none; color: #2d2d2d; }
+
+.main .groups__buttons__left .buttonMoreSlogan .top-slogan { height: 2px; width: 1.5625rem; top: -2px; left: 0.625rem; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, left 0.3s ease-out; transition: width 0.5s ease-out, left 0.3s ease-out; }
+
+.main .groups__buttons__left .buttonMoreSlogan .bottom-key-slogan-1 { height: 2px; width: 1.5625rem; right: 1.875rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__buttons__left .buttonMoreSlogan .bottom-key-slogan-2 { height: 2px; width: 0.625rem; right: 0.625rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__buttons__left .buttonMoreSlogan:hover { color: #ff5733; background: #f0f0f0; }
+
+.main .groups__buttons__left .buttonMoreSlogan:hover::before { width: 0.9375rem; background: white; }
+
+.main .groups__buttons__left .buttonMoreSlogan:hover .textSlogan { color: #ff5733; padding-left: 1.5em; }
+
+.main .groups__buttons__left .buttonMoreSlogan:hover .top-slogan { left: -2px; width: 0px; }
+
+.main .groups__buttons__left .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .groups__buttons__left .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
+
+.main .groups__buttons__right .buttonMoreSlogan { background-color: transparent; border: 2px solid #2d2d2d; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2d2d2d; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
+
+.main .groups__buttons__right .buttonMoreSlogan::before { content: " "; width: 1.5625rem; height: 2px; background: #2d2d2d; top: 50%; left: 1.5em; position: absolute; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: center; transform-origin: center; -webkit-transition: background 0.3s linear, width 0.3s linear; transition: background 0.3s linear, width 0.3s linear; }
+
+.main .groups__buttons__right .buttonMoreSlogan .textSlogan { font-size: 1.125em; line-height: 1.33333em; padding-left: 2em; display: block; text-align: left; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: uppercase; text-decoration: none; color: #2d2d2d; }
+
+.main .groups__buttons__right .buttonMoreSlogan .top-slogan { height: 2px; width: 1.5625rem; top: -2px; left: 0.625rem; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, left 0.3s ease-out; transition: width 0.5s ease-out, left 0.3s ease-out; }
+
+.main .groups__buttons__right .buttonMoreSlogan .bottom-key-slogan-1 { height: 2px; width: 1.5625rem; right: 1.875rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__buttons__right .buttonMoreSlogan .bottom-key-slogan-2 { height: 2px; width: 0.625rem; right: 0.625rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__buttons__right .buttonMoreSlogan:hover { color: #ff5733; background: #f0f0f0; }
+
+.main .groups__buttons__right .buttonMoreSlogan:hover::before { width: 0.9375rem; background: white; }
+
+.main .groups__buttons__right .buttonMoreSlogan:hover .textSlogan { color: #ff5733; padding-left: 1.5em; }
+
+.main .groups__buttons__right .buttonMoreSlogan:hover .top-slogan { left: -2px; width: 0px; }
+
+.main .groups__buttons__right .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .groups__buttons__right .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
+
+.main .groups__relations { height: 245vh; }
+
+.main .groups__relations__grid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.5fr 1.5fr; grid-template-rows: 0.5fr 1.5fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "groups__relations__top" "groups__relations__grid__bottom"; }
+
+.main .groups__relations__grid__top { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: groups__relations__top; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.main .groups__relations__grid__top__title { font-size: 1.5em; font-weight: 600; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #100000; }
+
+.main .groups__relations__grid__top__subtitle { font-size: 0.8em; font-weight: 600; color: #6d6969; padding: 3% 3% 0 3%; }
+
+.main .groups__relations__grid__bottom { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: groups__relations__grid__bottom; margin-top: 10%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan { background-color: transparent; border: 2px solid #2d2d2d; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2d2d2d; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan::before { content: " "; width: 1.5625rem; height: 2px; background: #2d2d2d; top: 50%; left: 1.5em; position: absolute; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: center; transform-origin: center; -webkit-transition: background 0.3s linear, width 0.3s linear; transition: background 0.3s linear, width 0.3s linear; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan .textSlogan { font-size: 1.125em; line-height: 1.33333em; padding-left: 2em; display: block; text-align: left; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: uppercase; text-decoration: none; color: #2d2d2d; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan .top-slogan { height: 2px; width: 1.5625rem; top: -2px; left: 0.625rem; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, left 0.3s ease-out; transition: width 0.5s ease-out, left 0.3s ease-out; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan .bottom-key-slogan-1 { height: 2px; width: 1.5625rem; right: 1.875rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan .bottom-key-slogan-2 { height: 2px; width: 0.625rem; right: 0.625rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan:hover { color: #ff5733; background: #f0f0f0; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan:hover::before { width: 0.9375rem; background: white; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan:hover .textSlogan { color: #ff5733; padding-left: 1.5em; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan:hover .top-slogan { left: -2px; width: 0px; }
+
+.main .groups__relations__grid__bottom .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .groups__relations__grid__bottom .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
+
+.main .groups__relations__grid__bottom .css-box-shadow { width: 310px; height: 675px; background: #f8f8f8; border-radius: 5px; box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); }
 
 .main .imgGroups { height: 300px; background-image: url(../img/Men3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
 .main .groupsMove { padding-left: 2.5%; }
 
-.main .css-box-shadow2 { width: 310px; height: 675px; background: #f8f8f8; border-radius: 5px; box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); }
-
 .main .imgGroups2 { height: 300px; background-image: url(../img/Women.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
-
-.main .css-box-shadow3 { width: 310px; height: 675px; background: #f8f8f8; border-radius: 5px; box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); }
 
 .main .imgGroups3 { height: 300px; background-image: url(../img/Youth.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 

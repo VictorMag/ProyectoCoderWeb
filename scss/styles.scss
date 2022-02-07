@@ -9,6 +9,18 @@
   align-items: center;
 }
 
+@mixin css-box-shadow {
+  .css-box-shadow {
+    width: 310px;
+    height: 675px;
+    background: #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+  }
+}
+
 @mixin buttonDark {
   .buttonMoreSlogan {
     background-color: transparent;
@@ -678,110 +690,122 @@ h1 {
     }
   }
 
-  // =============== CODIGO AUN NO PASADO A SASS ======================
+  // =============== GROUPS SECTION =============
 
-  /*  ============= GROUPS HOME ============== */
-  .groupsHome {
+  .groups {
     height: 60vh;
     background-image: url("../img/Groups.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position-x: center;
     background-size: cover;
+
+    &__slogan {
+      height: 60vh;
+    }
+
+    &__grid__slogan {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "groups__grid__title"
+        "groups__buttons";
+    }
+    &__grid__title {
+      grid-area: groups__grid__title;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include expand;
+
+      &__card {
+        padding-top: 10%;
+        color: $title-color-1;
+        font-size: size(medium);
+        font-weight: weight(medium);
+      }
+
+      &__subtitle {
+        color: $subtitle-color;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        font-size: size(small);
+        line-height: 1.6;
+        font-weight: weight(medium);
+        padding: 5% 3% 0 3%;
+      }
+    }
+
+    &__buttons {
+      grid-area: groups__buttons;
+      @include flexCenter(column);
+      flex-direction: column;
+      justify-content: space-around;
+
+      &__left {
+        color: #ff5733;
+        @include buttonLight;
+      }
+
+      &__right {
+        @include buttonLight;
+      }
+    }
+
+    &__relations {
+      height: 245vh;
+
+      &__grid {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.5fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "groups__relations__top"
+          "groups__relations__grid__bottom";
+
+        &__top {
+          grid-area: groups__relations__top;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: center;
+
+          &__title {
+            font-size: size(normal);
+            font-weight: weight(medium);
+            justify-content: center;
+            color: $title-color-1;
+          }
+
+          &__subtitle {
+            font-size: size(smallest);
+            font-weight: weight(medium);
+            color: $subtitle-color;
+            padding: 3% 3% 0 3%;
+          }
+        }
+
+        &__bottom {
+          grid-area: groups__relations__grid__bottom;
+          margin-top: 10%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          @include buttonLight;
+          @include css-box-shadow;
+        }
+      }
+    }
   }
 
-  .groups-slogan-container {
-    height: 90vh;
-  }
-
-  .groups-grid-slogan {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1.3fr 0.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "sloganTitle"
-      "groupsButtons";
-  }
-
-  .sloganTitle {
-    grid-area: sloganTitle;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .slogan-title {
-    padding-top: 10%;
-    color: var(--title-color-1);
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-bold);
-  }
-
-  .sloganSubtitle {
-    color: #6d6969;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    display: block;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-    padding-top: 5%;
-  }
-
-  .groupsButtons {
-    grid-area: groupsButtons;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 30%;
-  }
-
-  .button-group-right {
-    padding-left: 10%;
-  }
-
-  /* =============== RELATIONS SECTION =========== */
-  .groupRelations {
-    height: 150vh;
-  }
-
-  .relationsGrid {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 1.6fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "relationsTop"
-      "relationsBottom";
-  }
-
-  .relationsTop {
-    grid-area: relationsTop;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .relationsBottom {
-    grid-area: relationsBottom;
-    padding: 0 0 0 11%;
-    display: flex;
-  }
-
-  .css-box-shadow {
-    width: 310px;
-    height: 675px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
+  // =============== CODIGO AUN NO PASADO A SASS ======================
 
   .imgGroups {
     height: 300px;
@@ -795,32 +819,12 @@ h1 {
     padding-left: 2.5%;
   }
 
-  .css-box-shadow2 {
-    width: 310px;
-    height: 675px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
   .imgGroups2 {
     height: 300px;
     background-image: url(../img/Women.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-
-  .css-box-shadow3 {
-    width: 310px;
-    height: 675px;
-    background: #f8f8f8;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
   }
 
   .imgGroups3 {
