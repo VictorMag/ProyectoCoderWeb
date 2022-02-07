@@ -20,7 +20,7 @@ body { font-family: "Monserrat", sans-serif; font-size: 16px; background-color: 
 
 h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
-.main { /* ========= FOOTER ========= */ /*  ============= ABOUT SECTION ============ */ /* ============== ABOUT BODY SECTION ========== */ /* ================= CONNECT HOME ============== */ /* =============== CONNECT BODY ============ */ /*  ============= GROUPS HOME ============== */ /* =============== RELATIONS SECTION =========== */ /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
+.main { /*  ============= ABOUT SECTION ============ */ /* ============== ABOUT BODY SECTION ========== */ /* ================= CONNECT HOME ============== */ /* =============== CONNECT BODY ============ */ /*  ============= GROUPS HOME ============== */ /* =============== RELATIONS SECTION =========== */ /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
 
 .main .navbar .navbar-brand { font-weight: 300; font-size: 0.8em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -166,65 +166,15 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .footer__subs__button { background-color: #ff5733; border: #ff5733; color: #f0f0f0; }
 
-.main .footerSection { height: 80vh; background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(35%, black), to(#434343)); background: linear-gradient(90deg, #020024 0%, black 35%, #434343 100%); }
+.main .about { height: 60vh; background-image: url("../img/About.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
 
-.main .footerContainer { height: 100%; }
+.main .about__body { height: 100vh; }
 
-.main .footerContainer { display: -ms-grid; display: grid; -ms-grid-columns: 1fr 0.8fr 1.2fr; grid-template-columns: 1fr 0.8fr 1.2fr; -ms-grid-rows: 0.8fr 1.1fr; grid-template-rows: 0.8fr 1.1fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "footerData1 footerData3 footerData5" "footerData2 footerData4 footerData6"; }
+.main .about__grid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.3fr 1.7fr; grid-template-rows: 0.3fr 1.7fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "aboutTitleSection" "aboutButtons"; }
 
-.main .footerData1 { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: footerData1; text-transform: uppercase; padding: 15% 0 0 47.5%; }
+.main .about__title__section { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: aboutTitleSection; padding: 10% 0 0 12%; }
 
-.main .footerTitle { padding-bottom: 20px; }
-
-.main .footerSubtitle { color: var(--sub-title-color); }
-
-.main .footerLink { font-weight: var(--font-semi-bold); }
-
-.main .footerData2 { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: footerData2; font-weight: var(--font-semi-bold); color: var(--sub-title-color); text-transform: uppercase; padding: 1% 0 0 47.5%; }
-
-.main .footerData3 { -ms-grid-row: 1; -ms-grid-column: 2; grid-area: footerData3; font-weight: var(--font-semi-bold); color: var(--sub-title-color); text-transform: uppercase; padding: 17% 0 0 18%; }
-
-.main .footerData4 { -ms-grid-row: 2; -ms-grid-column: 2; grid-area: footerData4; font-weight: var(--font-semi-bold); color: var(--sub-title-color); text-transform: uppercase; padding: 15% 0 0 18%; }
-
-.main .footerData6 { -ms-grid-row: 1; -ms-grid-column: 3; grid-area: footerData5; font-weight: var(--font-semi-bold); color: var(--sub-title-color); text-transform: uppercase; padding: 11% 0 0 0.5%; }
-
-.main .footerData5 { -ms-grid-row: 2; -ms-grid-column: 3; grid-area: footerData6; font-weight: var(--font-semi-bold); color: var(--sub-title-color); text-transform: uppercase; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-
-.main .iconsFooter { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-
-.main .footerLink { color: var(--sub-title-color); }
-
-.main .footerSocial { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; }
-
-.main .imgFooter { height: 60px; }
-
-.main .footerRight { padding: 5px 0 0 30px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-
-.main .rights { letter-spacing: 3px; font-weight: var(--font-medium); color: var(--sub-title-color); font-size: 22px; }
-
-.main .iconsFooter { padding-top: 15px; }
-
-.main .footerIcon { color: var(--body-color); font-size: 1.2rem; }
-
-.main .footerLast { padding-top: 27px; }
-
-.main .footerSubtitle { font-weight: var(--font-medium); font-size: 15px; }
-
-.main .aboutHome { height: 60vh; background-image: url("../img/About.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
-
-.main .aboutBody { height: 70vh; }
-
-.main .aboutGrid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "aboutTitleSection" "aboutButtons"; }
-
-.main .aboutTitleSection { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: aboutTitleSection; padding: 5.5% 0 0 12%; }
-
-.main .aboutTitle { color: var(--title-color-1); font-size: var(--medium-font-size); font-weight: var(--font-bold); }
-
-.main .aboutButtons { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: aboutButtons; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
-.main .aboutSubtitle { letter-spacing: 2px; display: block; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
-
-.main .tracking-in-expand { -webkit-animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+.main .about__title__section .tracking-in-expand { -webkit-animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
 @-webkit-keyframes tracking-in-expand { 0% { letter-spacing: -0.5em;
     opacity: 0; }
@@ -235,6 +185,34 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
     opacity: 0; }
   40% { opacity: 0.6; }
   100% { opacity: 1; } }
+
+.main .about__title { color: #100000; font-size: 16px; font-weight: 1000; }
+
+.main .about__subtitle { padding-top: 1em; }
+
+.main .about__buttons { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: aboutButtons; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.main .about__buttons .buttonMoreSlogan { background-color: transparent; border: 2px solid #2d2d2d; border-radius: 5px; -webkit-box-sizing: border-box; box-sizing: border-box; color: #2d2d2d; cursor: pointer; display: inline-block; font-weight: 700; letter-spacing: 0.05em; margin: 0; outline: none; overflow: visible; padding: 1.25em 2em; position: relative; text-align: center; text-decoration: none; text-transform: none; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 13px; }
+
+.main .about__buttons .buttonMoreSlogan::before { content: " "; width: 1.5625rem; height: 2px; background: #2d2d2d; top: 50%; left: 1.5em; position: absolute; -webkit-transform: translateY(-50%); transform: translateY(-50%); -webkit-transform-origin: center; transform-origin: center; -webkit-transition: background 0.3s linear, width 0.3s linear; transition: background 0.3s linear, width 0.3s linear; }
+
+.main .about__buttons .buttonMoreSlogan .textSlogan { font-size: 1.125em; line-height: 1.33333em; padding-left: 2em; display: block; text-align: left; -webkit-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; text-transform: uppercase; text-decoration: none; color: #2d2d2d; }
+
+.main .about__buttons .buttonMoreSlogan .top-slogan { height: 2px; width: 1.5625rem; top: -2px; left: 0.625rem; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, left 0.3s ease-out; transition: width 0.5s ease-out, left 0.3s ease-out; }
+
+.main .about__buttons .buttonMoreSlogan .bottom-key-slogan-1 { height: 2px; width: 1.5625rem; right: 1.875rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .about__buttons .buttonMoreSlogan .bottom-key-slogan-2 { height: 2px; width: 0.625rem; right: 0.625rem; bottom: -2px; position: absolute; background: #f0f0f0; -webkit-transition: width 0.5s ease-out, right 0.3s ease-out; transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.main .about__buttons .buttonMoreSlogan:hover { color: #ff5733; background: #f0f0f0; }
+
+.main .about__buttons .buttonMoreSlogan:hover::before { width: 0.9375rem; background: white; }
+
+.main .about__buttons .buttonMoreSlogan:hover .textSlogan { color: #ff5733; padding-left: 1.5em; }
+
+.main .about__buttons .buttonMoreSlogan:hover .top-slogan { left: -2px; width: 0px; }
+
+.main .about__buttons .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .about__buttons .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
 
 .main .connectSection { height: 60vh; background-image: url("../img/Connect.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
 

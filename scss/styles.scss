@@ -254,6 +254,39 @@
   }
 }
 
+@mixin expand {
+  .tracking-in-expand {
+    -webkit-animation: tracking-in-expand 10s
+      cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  }
+
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
 @mixin mobile {
   @media (min-width: $mobile) {
     @content;
@@ -498,223 +531,62 @@ h1 {
     color: $body-color;
   }
 
-  // =============== CODIGO AUN NO PASADO A SASS ======================
+  // ============ ABOUT SECTION ==========
 
-  /* ========= FOOTER ========= */
-
-  .footerSection {
-    height: 80vh;
-    background: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(0, 0, 0, 1) 35%,
-      rgba(67, 67, 67, 1) 100%
-    );
-  }
-
-  .footerContainer {
-    height: 100%;
-  }
-
-  .footerContainer {
-    display: grid;
-    grid-template-columns: 1fr 0.8fr 1.2fr;
-    grid-template-rows: 0.8fr 1.1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "footerData1 footerData3 footerData5"
-      "footerData2 footerData4 footerData6";
-  }
-
-  .footerData1 {
-    grid-area: footerData1;
-    text-transform: uppercase;
-    padding: 15% 0 0 47.5%;
-  }
-
-  .footerTitle {
-    padding-bottom: 20px;
-  }
-
-  .footerSubtitle {
-    color: var(--sub-title-color);
-  }
-
-  .footerLink {
-    font-weight: var(--font-semi-bold);
-  }
-
-  .footerData2 {
-    grid-area: footerData2;
-    font-weight: var(--font-semi-bold);
-    color: var(--sub-title-color);
-    text-transform: uppercase;
-    padding: 1% 0 0 47.5%;
-  }
-
-  .footerData3 {
-    grid-area: footerData3;
-    font-weight: var(--font-semi-bold);
-    color: var(--sub-title-color);
-    text-transform: uppercase;
-    padding: 17% 0 0 18%;
-  }
-
-  .footerData4 {
-    grid-area: footerData4;
-    font-weight: var(--font-semi-bold);
-    color: var(--sub-title-color);
-    text-transform: uppercase;
-    padding: 15% 0 0 18%;
-  }
-
-  .footerData6 {
-    grid-area: footerData5;
-    font-weight: var(--font-semi-bold);
-    color: var(--sub-title-color);
-    text-transform: uppercase;
-    padding: 11% 0 0 0.5%;
-  }
-
-  .footerData5 {
-    grid-area: footerData6;
-    font-weight: var(--font-semi-bold);
-    color: var(--sub-title-color);
-    text-transform: uppercase;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .iconsFooter {
-    align-items: flex-start;
-  }
-
-  .footerLink {
-    color: var(--sub-title-color);
-  }
-
-  .footerSocial {
-    display: flex;
-    flex-direction: row;
-  }
-  .imgFooter {
-    height: 60px;
-  }
-
-  .footerRight {
-    padding: 5px 0 0 30px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .rights {
-    letter-spacing: 3px;
-    font-weight: var(--font-medium);
-    color: var(--sub-title-color);
-    font-size: 22px;
-  }
-
-  .iconsFooter {
-    padding-top: 15px;
-  }
-
-  .footerIcon {
-    color: var(--body-color);
-    font-size: 1.2rem;
-  }
-
-  .footerLast {
-    padding-top: 27px;
-  }
-
-  .footerSubtitle {
-    font-weight: var(--font-medium);
-    font-size: 15px;
-  }
-
-  /*  ============= ABOUT SECTION ============ */
-  .aboutHome {
+  .about {
     height: 60vh;
     background-image: url("../img/About.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
+    &__body {
+      height: 100vh;
+    }
+
+    &__grid {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.3fr 1.7fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "aboutTitleSection"
+        "aboutButtons";
+    }
+
+    &__title__section {
+      grid-area: aboutTitleSection;
+      padding: 10% 0 0 12%;
+      @include expand;
+    }
+
+    &__title {
+      color: $title-color-1;
+      font-size: size(small);
+      font-weight: weight(bold);
+    }
+
+    &__subtitle {
+      padding-top: 1em;
+    }
+
+    &__buttons {
+      grid-area: aboutButtons;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      @include buttonLight;
+    }
   }
+
+  // =============== CODIGO AUN NO PASADO A SASS ======================
+
+  /*  ============= ABOUT SECTION ============ */
 
   /* ============== ABOUT BODY SECTION ========== */
-  .aboutBody {
-    height: 70vh;
-  }
-
-  .aboutGrid {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "aboutTitleSection"
-      "aboutButtons";
-  }
-
-  .aboutTitleSection {
-    grid-area: aboutTitleSection;
-    padding: 5.5% 0 0 12%;
-  }
-
-  .aboutTitle {
-    color: var(--title-color-1);
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-bold);
-  }
-
-  .aboutButtons {
-    grid-area: aboutButtons;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .aboutSubtitle {
-    letter-spacing: 2px;
-    display: block;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .tracking-in-expand {
-    -webkit-animation: tracking-in-expand 10s
-      cubic-bezier(0.215, 0.61, 0.355, 1) both;
-    animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  }
-
-  @-webkit-keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes tracking-in-expand {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    40% {
-      opacity: 0.6;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
   /* ================= CONNECT HOME ============== */
   .connectSection {
