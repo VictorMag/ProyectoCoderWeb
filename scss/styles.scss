@@ -582,102 +582,103 @@ h1 {
     }
   }
 
-  // =============== CODIGO AUN NO PASADO A SASS ======================
-
-  /*  ============= ABOUT SECTION ============ */
-
-  /* ============== ABOUT BODY SECTION ========== */
-
-  /* ================= CONNECT HOME ============== */
-  .connectSection {
+  // =============== CONNECT SECTION ============
+  .connect {
     height: 60vh;
     background-image: url("../img/Connect.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position-x: center;
+
+    &__body {
+      height: 100vh;
+    }
+
+    &__grid {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+      gap: 0px 0px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "connect__title__section"
+        "connect__card1"
+        "connect__card2"
+        "connect__card3";
+    }
+    &__title__section {
+      grid-area: connect__title__section;
+      padding: 5.5% 0 0 12%;
+      // background-color: #ff5733;
+    }
+
+    &__title {
+      color: $title-color-1;
+      font-size: size(regular);
+      font-weight: weight(medium);
+      @include expand;
+    }
+
+    &__card1 {
+      grid-area: connect__card1;
+      @include flexCenter(row);
+      // background-color: #d2d2d2;
+    }
+
+    &__card2 {
+      grid-area: connect__card2;
+      @include flexCenter(row);
+      // background-color: #ff5733;
+    }
+
+    &__card3 {
+      grid-area: connect__card3;
+      @include flexCenter(row);
+      // background-color: #9a8478;
+    }
+    &__btn {
+      border: none;
+      width: 295px;
+      height: 250px;
+      border-radius: 10px;
+      cursor: pointer;
+      background-size: 200%;
+      transition: 0.6s;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+      &1 {
+        background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
+      }
+      &2 {
+        background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
+      }
+      &3 {
+        background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
+      }
+
+      &__title {
+        color: $body-color;
+        font-size: size(normal);
+        font-weight: weight(medium);
+      }
+      &__subtitle {
+        color: $body-color;
+        letter-spacing: 0.3em;
+        font-size: size(smallest);
+        font-weight: weight(medium);
+        padding-top: 5%;
+      }
+    }
+
+    &__btn:hover {
+      background-position: right;
+    }
   }
 
-  /* =============== CONNECT BODY ============ */
-
-  .connectBody {
-    height: 100vh;
-  }
-
-  .connectGrid {
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.7fr 1.3fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "connectTitleSection"
-      "connectCards";
-  }
-
-  .connectTitleSection {
-    grid-area: connectTitleSection;
-    padding: 5.5% 0 0 12%;
-  }
-
-  .connectTitle {
-    color: var(--title-color-1);
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-bold);
-  }
-
-  .connectCards {
-    grid-area: connectCards;
-    display: flex;
-    flex-direction: row;
-    padding-top: 1.6%;
-    justify-content: space-evenly;
-  }
-
-  .btn {
-    border: none;
-    width: 295px;
-    height: 295px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-size: 200%;
-    transition: 0.6s;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
-  }
-
-  .btn1 {
-    background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
-  }
-
-  .btn2 {
-    background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
-  }
-
-  .btn3 {
-    background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c);
-  }
-
-  .btn:hover {
-    background-position: right;
-  }
-
-  .btnTitle {
-    color: var(--body-color);
-    font-size: 2rem;
-    font-weight: var(--font-bold);
-  }
-
-  .btnSubtitle {
-    color: #d2d2d2;
-    letter-spacing: 2px;
-    font-size: 12px;
-    display: block;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-    padding-top: 10%;
-  }
+  // =============== CODIGO AUN NO PASADO A SASS ======================
 
   /*  ============= GROUPS HOME ============== */
   .groupsHome {

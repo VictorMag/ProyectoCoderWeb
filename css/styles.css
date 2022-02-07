@@ -20,7 +20,7 @@ body { font-family: "Monserrat", sans-serif; font-size: 16px; background-color: 
 
 h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
-.main { /*  ============= ABOUT SECTION ============ */ /* ============== ABOUT BODY SECTION ========== */ /* ================= CONNECT HOME ============== */ /* =============== CONNECT BODY ============ */ /*  ============= GROUPS HOME ============== */ /* =============== RELATIONS SECTION =========== */ /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
+.main { /*  ============= GROUPS HOME ============== */ /* =============== RELATIONS SECTION =========== */ /* =============== GIVE SECTION =========== */ /* Options Sections */ /* ==== MEDIA RESPONSIVE ======= */ }
 
 .main .navbar .navbar-brand { font-weight: 300; font-size: 0.8em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
 
@@ -214,31 +214,47 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .about__buttons .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .about__buttons .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
 
-.main .connectSection { height: 60vh; background-image: url("../img/Connect.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+.main .connect { height: 60vh; background-image: url("../img/Connect.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; background-position-x: center; }
 
-.main .connectBody { height: 100vh; }
+.main .connect__body { height: 100vh; }
 
-.main .connectGrid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.7fr 1.3fr; grid-template-rows: 0.7fr 1.3fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "connectTitleSection" "connectCards"; }
+.main .connect__grid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.4fr 1.2fr 1.2fr 1.2fr; grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "connect__title__section" "connect__card1" "connect__card2" "connect__card3"; }
 
-.main .connectTitleSection { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: connectTitleSection; padding: 5.5% 0 0 12%; }
+.main .connect__title__section { -ms-grid-row: 1; -ms-grid-column: 1; grid-area: connect__title__section; padding: 5.5% 0 0 12%; }
 
-.main .connectTitle { color: var(--title-color-1); font-size: var(--medium-font-size); font-weight: var(--font-bold); }
+.main .connect__title { color: #100000; font-weight: 600; }
 
-.main .connectCards { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: connectCards; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; padding-top: 1.6%; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+.main .connect__title .tracking-in-expand { -webkit-animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; animation: tracking-in-expand 10s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
 
-.main .btn { border: none; width: 295px; height: 295px; border-radius: 10px; cursor: pointer; background-size: 200%; -webkit-transition: 0.6s; transition: 0.6s; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
+@-webkit-keyframes tracking-in-expand { 0% { letter-spacing: -0.5em;
+    opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { opacity: 1; } }
 
-.main .btn1 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+@keyframes tracking-in-expand { 0% { letter-spacing: -0.5em;
+    opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { opacity: 1; } }
 
-.main .btn2 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+.main .connect__card1 { -ms-grid-row: 2; -ms-grid-column: 1; grid-area: connect__card1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.main .btn3 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+.main .connect__card2 { -ms-grid-row: 3; -ms-grid-column: 1; grid-area: connect__card2; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.main .btn:hover { background-position: right; }
+.main .connect__card3 { -ms-grid-row: 4; -ms-grid-column: 1; grid-area: connect__card3; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.main .btnTitle { color: var(--body-color); font-size: 2rem; font-weight: var(--font-bold); }
+.main .connect__btn { border: none; width: 295px; height: 250px; border-radius: 10px; cursor: pointer; background-size: 200%; -webkit-transition: 0.6s; transition: 0.6s; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); }
 
-.main .btnSubtitle { color: #d2d2d2; letter-spacing: 2px; font-size: 12px; display: block; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); padding-top: 10%; }
+.main .connect__btn1 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+
+.main .connect__btn2 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+
+.main .connect__btn3 { background-image: -webkit-gradient(linear, right top, left top, from(#1e130c), color-stop(#9a8478), to(#1e130c)); background-image: linear-gradient(to left, #1e130c, #9a8478, #1e130c); }
+
+.main .connect__btn__title { color: #f0f0f0; font-size: 1.5em; font-weight: 600; }
+
+.main .connect__btn__subtitle { color: #f0f0f0; letter-spacing: 0.3em; font-size: 0.8em; font-weight: 600; padding-top: 5%; }
+
+.main .connect__btn:hover { background-position: right; }
 
 .main .groupsHome { height: 60vh; background-image: url("../img/Groups.jpg"); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
 
