@@ -377,6 +377,7 @@ h1 {
       .slogan__text {
         color: $title-color-2;
         margin-left: 1.5em;
+        font-weight: weight(medium);
       }
 
       .slogan__title {
@@ -418,6 +419,7 @@ h1 {
 
     &__left__container__subtitle {
       margin: 1.5em 0 0 1.5em;
+      font-weight: weight(medium);
     }
     &__left__container__title {
       font-size: size(big);
@@ -459,6 +461,22 @@ h1 {
         height: 15em;
       }
     }
+  }
+
+  //  FOOTER SECTION
+
+  .footer-03 {
+    padding-top: 2em;
+    background-color: $nav-color-2;
+    height: 100vh;
+  }
+
+  .footer-heading {
+    color: $body-color;
+  }
+
+  .py-1 {
+    color: $body-color;
   }
 
   // =============== CODIGO AUN NO PASADO A SASS ======================
