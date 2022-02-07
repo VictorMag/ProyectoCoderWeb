@@ -328,7 +328,7 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .groups__buttons__right .buttonMoreSlogan:hover .bottom-key-slogan-1, .main .groups__buttons__right .buttonMoreSlogan:hover .bottom-key-slogan-2 { right: 0; width: 0; }
 
-.main .groups__relations { height: 245vh; }
+.main .groups__relations { height: 260vh; }
 
 .main .groups__relations__grid { height: 100%; display: -ms-grid; display: grid; -ms-grid-columns: 1fr; grid-template-columns: 1fr; -ms-grid-rows: 0.5fr 1.5fr; grid-template-rows: 0.5fr 1.5fr; gap: 0px 0px; grid-auto-flow: row; grid-template-areas: "groups__relations__top" "groups__relations__grid__bottom"; }
 
@@ -364,35 +364,25 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .groups__relations__grid__bottom .css-box-shadow { width: 310px; height: 675px; background: #f8f8f8; border-radius: 5px; box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1); }
 
-.main .imgGroups { height: 300px; background-image: url(../img/Men3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.main .groups__relations__grid__img__title { letter-spacing: 3px; padding: 110% 0 0 16%; color: #6d6969; font-weight: 600; }
 
-.main .groupsMove { padding-left: 2.5%; }
+.main .groups__relations__grid__img__title3 { letter-spacing: 3px; padding: 110% 0 0 10%; color: #6d6969; font-weight: 600; }
 
-.main .imgGroups2 { height: 300px; background-image: url(../img/Women.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.main .groups__relations__grid__description { color: #6d6969; font-size: 0.8em; line-height: 1.6; word-spacing: 5px; padding: 7% 6% 0 6%; text-align: justify; font-weight: 300; }
 
-.main .imgGroups3 { height: 300px; background-image: url(../img/Youth.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
+.main .groups__relations__grid__button { padding: 30% 0 0 19%; }
 
-.main .gropusMove3 { padding-left: 2.5%; }
+.main .groups__relations__grid__button2 { padding: 10% 0 0 19%; }
 
-.main .relationsTitle { color: var(--title-color-1); font-size: var(--medium-font-size); font-weight: var(--font-bold); }
+.main .groups__relations__grid__button3 { padding: 8% 0 0 19%; }
 
-.main .relationsSubtitle { padding: 1.5% 0 0 0; color: #6d6969; letter-spacing: 2px; font-size: 0.9rem; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
+.main .groups__relations__grid__img1 { height: 300px; background-image: url(../img/Men3.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.main .imgGroupsDetail { max-height: 100%; max-width: 100%; }
+.main .groups__relations__grid__img2 { height: 300px; background-image: url(../img/Women.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.main .relations-img-title { letter-spacing: 3px; padding: 110% 0 0 16%; color: #6d6969; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
+.main .groups__relations__grid__img3 { height: 300px; background-image: url(../img/Youth.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; }
 
-.main .relations-img-title2 { letter-spacing: 3px; padding: 110% 0 0 19%; color: #6d6969; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
-
-.main .relations-img-title3 { letter-spacing: 3px; padding: 110% 0 0 11%; color: #6d6969; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
-
-.main .relationsDescription { color: #6d6969; font-size: 0.8rem; line-height: 1.6; word-spacing: 5px; padding: 7% 6% 0 6%; text-align: justify; font-weight: var(--font-semi-bold); margin-bottom: var(--mb-0-75); }
-
-.main .relationsButton { padding: 30% 0 0 19%; }
-
-.main .relationsButton2 { padding: 10% 0 0 19%; }
-
-.main .relationsButton3 { padding: 4% 0 0 19%; }
+.main .groups__relations__grid__move { padding-top: 10%; }
 
 .main .giveHome { margin-bottom: 10%; position: relative; }
 

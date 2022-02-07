@@ -9,6 +9,9 @@
   align-items: center;
 }
 
+@mixin groupsImg {
+}
+
 @mixin css-box-shadow {
   .css-box-shadow {
     width: 310px;
@@ -757,7 +760,7 @@ h1 {
     }
 
     &__relations {
-      height: 245vh;
+      height: 260vh;
 
       &__grid {
         height: 100%;
@@ -801,110 +804,72 @@ h1 {
           @include buttonLight;
           @include css-box-shadow;
         }
+        &__img__title {
+          letter-spacing: 3px;
+          padding: 110% 0 0 16%;
+          color: $subtitle-color;
+          font-weight: weight(medium);
+        }
+
+        &__img__title3 {
+          letter-spacing: 3px;
+          padding: 110% 0 0 10%;
+          color: $subtitle-color;
+          font-weight: weight(medium);
+        }
+
+        &__description {
+          color: $subtitle-color;
+          font-size: size(smallest);
+          line-height: 1.6;
+          word-spacing: 5px;
+          padding: 7% 6% 0 6%;
+          text-align: justify;
+          font-weight: weight(regular);
+        }
+
+        &__button {
+          padding: 30% 0 0 19%;
+        }
+
+        &__button2 {
+          padding: 10% 0 0 19%;
+        }
+
+        &__button3 {
+          padding: 8% 0 0 19%;
+        }
+
+        &__img1 {
+          height: 300px;
+          background-image: url(../img/Men3.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+
+        &__img2 {
+          height: 300px;
+          background-image: url(../img/Women.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        &__img3 {
+          height: 300px;
+          background-image: url(../img/Youth.jpg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        }
+        &__move {
+          padding-top: 10%;
+        }
       }
     }
   }
 
   // =============== CODIGO AUN NO PASADO A SASS ======================
-
-  .imgGroups {
-    height: 300px;
-    background-image: url(../img/Men3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .groupsMove {
-    padding-left: 2.5%;
-  }
-
-  .imgGroups2 {
-    height: 300px;
-    background-image: url(../img/Women.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .imgGroups3 {
-    height: 300px;
-    background-image: url(../img/Youth.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  .gropusMove3 {
-    padding-left: 2.5%;
-  }
-
-  .relationsTitle {
-    color: var(--title-color-1);
-    font-size: var(--medium-font-size);
-    font-weight: var(--font-bold);
-  }
-
-  .relationsSubtitle {
-    padding: 1.5% 0 0 0;
-    color: #6d6969;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .imgGroupsDetail {
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-  .relations-img-title {
-    letter-spacing: 3px;
-    padding: 110% 0 0 16%;
-    color: #6d6969;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relations-img-title2 {
-    letter-spacing: 3px;
-    padding: 110% 0 0 19%;
-    color: #6d6969;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relations-img-title3 {
-    letter-spacing: 3px;
-    padding: 110% 0 0 11%;
-    color: #6d6969;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relationsDescription {
-    color: #6d6969;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    word-spacing: 5px;
-    padding: 7% 6% 0 6%;
-    text-align: justify;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relationsButton {
-    padding: 30% 0 0 19%;
-  }
-
-  .relationsButton2 {
-    padding: 10% 0 0 19%;
-  }
-
-  .relationsButton3 {
-    padding: 4% 0 0 19%;
-  }
 
   /* =============== GIVE SECTION =========== */
 
