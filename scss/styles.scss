@@ -869,126 +869,241 @@ h1 {
     }
   }
 
-  // =============== CODIGO AUN NO PASADO A SASS ======================
-
-  /* =============== GIVE SECTION =========== */
-
-  .giveHome {
+  .give {
     margin-bottom: 10%;
     position: relative;
-  }
 
-  .giveTitle {
-    padding: 11% 0 0 13%;
-    color: var(--title-color-1);
-    font-size: 7rem;
-    font-weight: var(--font-bold);
-    position: absolute;
-    z-index: 15;
-  }
-
-  .giveSubtitle {
-    position: absolute;
-    color: #6d6969;
-    letter-spacing: 2px;
-    font-size: 0.9rem;
-    margin-bottom: var(--mb-0-75);
-    padding: 36% 0 0 15%;
-    line-height: 20px;
-    z-index: 14;
-  }
-
-  .slide-right {
-    width: 100%;
-    overflow: hidden;
-  }
-  .slide-right .giveSubtitle {
-    animation: 2s slide-right;
-  }
-
-  @keyframes slide-right {
-    from {
-      margin-left: -100%;
-      width: 300%;
+    &__title {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      padding: 30% 0 20% 0;
+      color: $title-color-1;
+      font-size: size(big);
+      font-weight: weight(bold);
+      position: absolute;
+      z-index: 15;
     }
 
-    to {
-      margin-left: 0%;
+    &__subtitle {
+      position: absolute;
+      color: $subtitle-color;
+      letter-spacing: 2px;
+      font-size: 0.9rem;
+      padding: 2% 0 0 15%;
+      line-height: 20px;
+      z-index: 14;
+    }
+
+    &__arrow {
+      position: absolute;
+      z-index: 13;
+      padding: 80% 0 0 60%;
+
+      &:hover {
+        .arrowGive:hover {
+          opacity: 0.65;
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__button {
+      border-radius: 50%;
+      padding: 0.02em 0.1em;
+      background-color: #100000;
+      border-style: solid;
+      cursor: pointer;
+      border-color: #100000;
+      color: $body-color;
+      font-size: 20px;
+      transition-duration: 0.4s;
+    }
+
+    &__img {
+      padding: 8% 0 0 10%;
+      z-index: -10;
+    }
+
+    &__img--modify {
+      z-index: -900;
+      position: relative;
+      border-radius: 10px;
+      height: 300px;
+      width: 350px;
+      display: block;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+      -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .slide-right {
       width: 100%;
+      overflow: hidden;
+    }
+    .slide-right .give__subtitle {
+      animation: 2s slide-right;
+    }
+
+    @keyframes slide-right {
+      from {
+        margin-left: -100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
     }
   }
 
-  .arrowGive {
-    position: absolute;
-    z-index: 13;
-    padding: 42% 0 0 15%;
-  }
+  /* Options Sections */
 
-  .arrowGive:hover {
-    opacity: 0.65;
-    cursor: pointer;
-  }
+  .cards {
+    padding: 3%;
+    margin: 3%;
+    height: 200vh;
 
-  .arrowGive1 {
-    padding: 14% 0 0 30%;
-    font-size: 20px;
-  }
+    &__button {
+      border-radius: 50%;
+      padding: 0.02rem 0.1rem;
+      background-color: #100000;
+      border-style: solid;
+      cursor: pointer;
+      border-color: #100000;
+      color: $body-color;
+      font-size: 14px;
+      transition-duration: 0.4s;
 
-  .arrowGive1:hover {
-    cursor: pointer;
-    opacity: 0.65;
-  }
+      &:hover {
+        opacity: 0.65;
+      }
+    }
 
-  .give-button {
-    z-index: 12;
-    padding: 10% 0 0 0;
-  }
+    &__one {
+      height: 35rem;
+      background-color: $give-cards;
+      border-radius: 5px;
+      box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+    }
 
-  .giveButton {
-    border-radius: 50%;
-    padding: 0.02rem 0.1rem;
-    background-color: #100000;
-    border-style: solid;
-    cursor: pointer;
-    border-color: #100000;
-    color: var(--body-color);
-    font-size: 20px;
-    transition-duration: 0.4s;
-  }
+    &__two {
+      height: 35rem;
+      background-color: $give-cards;
+      border-radius: 5px;
+      box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+    }
 
-  .giveButton1 {
-    border-radius: 50%;
-    padding: 0.02rem 0.1rem;
-    background-color: #100000;
-    border-style: solid;
-    cursor: pointer;
-    border-color: #100000;
-    color: var(--body-color);
-    font-size: 14px;
-    transition-duration: 0.4s;
-  }
+    &__three {
+      z-index: -10;
+      height: 35rem;
+      background-color: $give-cards;
+      border-radius: 5px;
+      box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
+    }
 
-  .giveButton1:hover {
-    opacity: 0.65;
-  }
+    &__title {
+      font-size: size(medium);
+      margin: 5% 0 0 25%;
 
-  .giveImg {
-    padding: 8% 0 0 36%;
-    z-index: -10;
-  }
+      &__subtitle {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: size(small);
+      }
+    }
 
-  .give-img {
-    z-index: -900;
-    position: relative;
-    border-radius: 10px;
-    height: 450px;
-    width: 650px;
-    display: block;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-  }
+    &__img1 {
+      margin-top: 25px;
+      margin-left: 10%;
+      border-radius: 20px;
+      height: 12em;
+      width: 16em;
+    }
 
+    &__img2 {
+      margin-top: 25px;
+      margin-left: 10%;
+      border-radius: 20px;
+      height: 12em;
+      width: 16em;
+    }
+
+    &__title2 {
+      font-size: size(medium);
+      margin: 5% 0 0 25%;
+
+      &__subtitle {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: size(small);
+      }
+    }
+
+    &__img3 {
+      margin-top: 25px;
+      margin-left: 10%;
+      border-radius: 20px;
+      height: 12em;
+      width: 16em;
+    }
+
+    &__title3 {
+      font-size: size(medium);
+      margin: 5% 0 0 25%;
+
+      &__subtitle {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: size(small);
+      }
+    }
+
+    &__checks {
+      padding-left: 40px;
+    }
+
+    &__harvest {
+      padding-top: 15px;
+      padding-left: 65px;
+    }
+
+    &__direction {
+      font-weight: 800;
+      font-size: 15px;
+
+      text-align: center;
+    }
+
+    &__box3,
+    &__box3-1,
+    &__email {
+      font-weight: 800;
+    }
+    &__arrow-give {
+      font-size: size(small);
+      margin-left: 25%;
+      margin-top: 50px;
+    }
+    &__button__text {
+      transition: 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.65;
+        transition: 0.3s ease;
+      }
+    }
+  }
   .slide-in-right {
     -webkit-animation: slide-in-right 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
       both;
@@ -1020,253 +1135,9 @@ h1 {
     }
   }
 
-  /* Options Sections */
+  // =============== CODIGO AUN NO PASADO A SASS ======================
 
-  .giveOptions {
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 0 12.8%;
-  }
-
-  .blackText {
-    font-weight: 1000;
-  }
-
-  .css-box-shadow1 {
-    width: 290px;
-    height: 563px;
-    background: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .imgGropups {
-    overflow: hidden;
-  }
-
-  .optionImg {
-    width: 272px;
-    height: 200px;
-    border-radius: 10px;
-    margin: 10% 0% 0 3%;
-  }
-
-  .groupsMove4 {
-    padding-left: 2.5%;
-  }
-
-  .css-box-shadow4 {
-    width: 290px;
-    height: 563px;
-    background: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .css-box-shadow5 {
-    width: 290px;
-    height: 563px;
-    background: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .gropusMove5 {
-    padding-left: 2.5%;
-  }
-
-  .relations-img-title1 {
-    padding: 14% 0 0 18%;
-    color: #1a1b1b;
-    font-size: 1.8rem;
-    font-weight: 1000;
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relations-img-title4 {
-    padding: 14% 0 0 15%;
-    font-size: 1.8rem;
-    color: #1a1b1b;
-    font-weight: 1000;
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relations-img-title5 {
-    padding: 14% 0 0 15%;
-    font-size: 1.8rem;
-    color: #1a1b1b;
-    font-weight: 1000;
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relationsDescription1 {
-    color: #2c2a39;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    word-spacing: 5px;
-    padding: 7% 6% 0 6%;
-    text-align: justify;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relationsDescription4 {
-    color: #2c2a39;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    word-spacing: 5px;
-    padding: 7% 6% 0 6%;
-    text-align: justify;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .relationsDescription5 {
-    color: #2c2a39;
-    font-size: 0.8rem;
-    line-height: 1.6;
-    word-spacing: 5px;
-    padding: 7% 6% 0 6%;
-    text-align: justify;
-    font-weight: var(--font-semi-bold);
-    margin-bottom: var(--mb-0-75);
-  }
-
-  .testBo {
-    padding: 2%;
-    margin: 2%;
-  }
-
-  .prinContainer {
-    height: 100%;
-    width: 100%;
-  }
-
-  .one {
-    height: 35rem;
-    background-color: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .two {
-    background-color: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .three {
-    z-index: -10;
-
-    background-color: #d5d3d2;
-    border-radius: 5px;
-    box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 5px 5px 23px rgba(0, 0, 0, 0.1);
-  }
-
-  .giveimg1 {
-    margin-top: 50px;
-    border-radius: 20px;
-    height: 11rem;
-    width: 16rem;
-  }
-
-  .give-box-title {
-    font-size: 35px;
-    margin: 20px 0 0 27px;
-  }
-
-  .give-box-text {
-    text-align: justify;
-    margin-top: 20px;
-    font-size: 15px;
-  }
-
-  .giveimg2 {
-    margin-top: 50px;
-    border-radius: 20px;
-    height: 11rem;
-    width: 16rem;
-  }
-
-  .give-box-title2 {
-    font-size: 35px;
-    margin: 20px 0 0 27px;
-  }
-
-  .give-box-text2 {
-    text-align: justify;
-    margin-top: 20px;
-    font-size: 15px;
-  }
-
-  .giveimg3 {
-    margin-top: 50px;
-    border-radius: 20px;
-    height: 11rem;
-    width: 16rem;
-  }
-
-  .give-box-title3 {
-    font-size: 35px;
-    margin: 20px 0 0 27px;
-  }
-
-  .give-box-text3 {
-    text-align: justify;
-    margin-top: 20px;
-    font-size: 15px;
-  }
-
-  .checks {
-    padding-left: 40px;
-  }
-
-  .harvest {
-    padding-top: 15px;
-    padding-left: 65px;
-  }
-
-  .direction {
-    font-weight: 800;
-    font-size: 15px;
-
-    text-align: center;
-  }
-
-  .box3,
-  .box3-1,
-  .email {
-    font-weight: 800;
-  }
-
-  .arrow-give {
-    font-size: 20px;
-    margin-left: 60px;
-    margin-top: 50px;
-  }
-
-  .button-text {
-    transition: 0.3s;
-  }
-
-  .button-text:hover {
-    cursor: pointer;
-    opacity: 0.65;
-    transition: 0.3s ease;
-  }
+  /* =============== GIVE SECTION =========== */
 
   /* ==== MEDIA RESPONSIVE ======= */
 
