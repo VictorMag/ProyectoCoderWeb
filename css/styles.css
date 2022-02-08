@@ -414,7 +414,7 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
   to { margin-left: 0%;
     width: 100%; } }
 
-.main .cards { padding: 3%; margin: 3%; height: 200vh; }
+.main .cards { padding: 3%; margin: 3%; height: 210vh; }
 
 .main .cards__button { border-radius: 50%; padding: 0.02rem 0.1rem; background-color: #100000; border-style: solid; cursor: pointer; border-color: #100000; color: #f0f0f0; font-size: 14px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; }
 
