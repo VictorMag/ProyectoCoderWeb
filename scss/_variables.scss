@@ -23,9 +23,11 @@ $give-cards: #d5d3d2;
 $font-sizes: (
   "smallest": 0.8em,
   "small": 16px,
+  "subtitle": 1.2em,
   "normal": 1.5em,
   "medium": 1.7em,
   "big": 2em,
+  "biggest": 3em,
 );
 
 $body-font: "Monserrat", sans-serif;
@@ -49,3 +51,19 @@ $mb-1-25: 1.25rem;
 $mb-1-5: 1.5rem;
 $mb-2: 2rem;
 $mb-2-5: 2.5rem;
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}
