@@ -517,23 +517,23 @@ h1 {
         }
       }
 
-      // &__button {
-      //   position: absolute;
-      //   display: block;
-      //   margin-top: 8em;
-      //   margin-left: 8em;
-      //   height: 25em;
+      &__button {
+        position: absolute;
+        display: block;
+        margin-top: 8em;
+        margin-left: 8em;
+        height: 25em;
 
-      //   @include media-md {
-      //     height: 35em;
-      //     margin-left: 12em;
-      //   }
+        @include media-md {
+          height: 35em;
+          margin-left: 12em;
+        }
 
-      //   @include media-lg {
-      //     height: 30em;
-      //     margin-top: 0em;
-      //   }
-      // }
+        @include media-lg {
+          height: 30em;
+          margin-top: 0em;
+        }
+      }
     }
 
     &__button {
@@ -660,6 +660,10 @@ h1 {
 
     @include media-md {
       height: 50vh;
+    }
+
+    @include media-lg {
+      height: 80vh;
     }
   }
 
