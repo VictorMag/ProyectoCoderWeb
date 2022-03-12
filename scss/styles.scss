@@ -1,6 +1,5 @@
 @import "./reset";
 @import "./variables";
-@import "./responsive";
 
 // SASS SUPERPOWER
 
@@ -341,15 +340,28 @@ h1 {
       display: flex;
       flex-direction: column;
 
+      @include media-lg {
+        font-weight: weight(bold);
+        padding-left: 1%;
+      }
+
       @include media-md {
         font-size: size(small);
       }
     }
+    &-nav {
+      @include media-lg {
+        padding-left: 30%;
+      }
+    }
+
     .nav-item {
       .nav-link {
         color: $black-color;
+        transition: 0.3s ease;
         &:hover {
           color: $orange-color;
+          transition: 0.3s ease;
         }
       }
     }
@@ -363,6 +375,11 @@ h1 {
     @include media-md {
       height: 50vh;
     }
+
+    @include media-lg {
+      height: 100vh;
+    }
+
     &__container {
       height: 100%;
       display: grid;
@@ -387,6 +404,10 @@ h1 {
         font-size: size(biggest);
       }
 
+      @include media-lg {
+        font-size: size(laptop);
+      }
+
       // 2dn Grid
       &__subtitle {
         grid-area: home__text__subtitle;
@@ -394,10 +415,21 @@ h1 {
         font-weight: weight(medium);
         @include blurText;
         margin: 0 1.5em 0 1.5em;
+
+        @include media-lg {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
     &__icons {
       margin-top: 1.5em;
+
+      @include media-lg {
+        margin-top: 0;
+        margin-left: 1em;
+        word-spacing: 5px;
+      }
     }
 
     &__social-link {
@@ -409,6 +441,10 @@ h1 {
   .img {
     height: 37vh;
 
+    @include media-lg {
+      height: 90vh;
+    }
+
     &__middle {
       display: block;
       width: 25em;
@@ -418,6 +454,11 @@ h1 {
       @include media-md {
         width: 28em;
         height: 18em;
+      }
+
+      @include media-lg {
+        width: 55em;
+        height: 35em;
       }
     }
     &__background {
@@ -431,10 +472,6 @@ h1 {
         height: 15vh;
       }
     }
-
-    @include media-md {
-      // background-color: #ff5733;
-    }
   }
 
   // SLOGAN SECTION
@@ -443,8 +480,16 @@ h1 {
     height: 100vh;
     background-color: $nav-color-2;
 
+    @include media-lg {
+      margin-top: 5%;
+    }
+
     &__container {
       height: 100%;
+
+      @include media-lg {
+        display: flex;
+      }
     }
 
     &__img {
@@ -482,6 +527,11 @@ h1 {
         @include media-md {
           height: 35em;
           margin-left: 12em;
+        }
+
+        @include media-lg {
+          height: 30em;
+          margin-top: 0em;
         }
       }
     }
@@ -704,7 +754,6 @@ h1 {
     &__title__section {
       grid-area: connect__title__section;
       padding: 5.5% 0 0 12%;
-      // background-color: #ff5733;
     }
 
     &__title {
@@ -717,19 +766,16 @@ h1 {
     &__card1 {
       grid-area: connect__card1;
       @include flexCenter(row);
-      // background-color: #d2d2d2;
     }
 
     &__card2 {
       grid-area: connect__card2;
       @include flexCenter(row);
-      // background-color: #ff5733;
     }
 
     &__card3 {
       grid-area: connect__card3;
       @include flexCenter(row);
-      // background-color: #9a8478;
     }
     &__btn {
       border: none;
@@ -948,6 +994,8 @@ h1 {
     }
   }
 
+  // ========= GIVE SECTION ==========
+
   .give {
     margin-bottom: 10%;
     position: relative;
@@ -1127,7 +1175,7 @@ h1 {
 
     &__title {
       font-size: size(medium);
-      margin: 5% 0 0 25%;
+      margin: 5% 0 0 30%;
 
       &__subtitle {
         text-align: justify;
@@ -1138,7 +1186,7 @@ h1 {
 
     &__img1 {
       margin-top: 25px;
-      margin-left: 10%;
+      margin-left: 15%;
       border-radius: 20px;
       height: 12em;
       width: 16em;
@@ -1146,7 +1194,7 @@ h1 {
 
     &__img2 {
       margin-top: 25px;
-      margin-left: 10%;
+      margin-left: 15%;
       border-radius: 20px;
       height: 12em;
       width: 16em;
@@ -1154,7 +1202,7 @@ h1 {
 
     &__title2 {
       font-size: size(medium);
-      margin: 5% 0 0 25%;
+      margin: 5% 0 0 30%;
 
       &__subtitle {
         text-align: justify;
@@ -1165,7 +1213,7 @@ h1 {
 
     &__img3 {
       margin-top: 25px;
-      margin-left: 10%;
+      margin-left: 15%;
       border-radius: 20px;
       height: 12em;
       width: 16em;
@@ -1173,7 +1221,7 @@ h1 {
 
     &__title3 {
       font-size: size(medium);
-      margin: 5% 0 0 25%;
+      margin: 5% 0 0 30%;
 
       &__subtitle {
         text-align: justify;
@@ -1183,19 +1231,18 @@ h1 {
     }
 
     &__checks {
-      padding-left: 40px;
+      padding-left: 27%;
     }
 
     &__harvest {
       padding-top: 15px;
-      padding-left: 65px;
+      padding-left: 30%;
     }
 
     &__direction {
       font-weight: 800;
       font-size: 15px;
-
-      text-align: center;
+      padding-left: 7%;
     }
 
     &__box3,
