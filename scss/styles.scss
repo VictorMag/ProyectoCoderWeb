@@ -481,7 +481,7 @@ h1 {
     background-color: $nav-color-2;
 
     @include media-lg {
-      margin-top: 5%;
+      margin-top: 3%;
     }
 
     &__container {
@@ -551,6 +551,12 @@ h1 {
   .staff {
     height: 100vh;
 
+    &__container {
+      @include media-lg {
+        display: flex;
+      }
+    }
+
     &__flex {
       display: flex;
       margin-top: 2em;
@@ -559,6 +565,10 @@ h1 {
 
       @include media-md {
         margin-top: 15%;
+      }
+
+      @include media-lg {
+        width: 30em;
       }
     }
 
@@ -608,6 +618,10 @@ h1 {
       @include media-md {
         margin-top: 15%;
         justify-content: space-evenly;
+      }
+
+      @include media-lg {
+        width: 100%;
       }
 
       &__img1 {
