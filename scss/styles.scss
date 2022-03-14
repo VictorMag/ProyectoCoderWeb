@@ -515,6 +515,10 @@ h1 {
           margin: 30% 0 0 15%;
           font-size: size(biggest);
         }
+
+        @include media-lg {
+          margin: 3em 0 0 4.5em;
+        }
       }
 
       &__button {
@@ -531,7 +535,8 @@ h1 {
 
         @include media-lg {
           height: 30em;
-          margin-top: 0em;
+          margin-top: 1.5em;
+          padding-left: 4em;
         }
       }
     }
@@ -540,8 +545,14 @@ h1 {
       @include buttonDark;
       @include flexCenter(column);
       margin-top: 50%;
+
       @include media-md {
         margin-top: 35%;
+      }
+
+      @include media-lg {
+        margin-top: 0;
+        margin-left: 24em;
       }
     }
   }
@@ -742,6 +753,11 @@ h1 {
       justify-content: space-around;
       align-items: center;
       @include buttonLight;
+
+      @include media-lg {
+        display: flex;
+        flex-direction: row;
+      }
     }
 
     @include media-md {
@@ -777,6 +793,16 @@ h1 {
         "connect__card2"
         "connect__card3";
     }
+
+    &__flex {
+      @include media-lg {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 10em;
+      }
+    }
+
     &__title__section {
       grid-area: connect__title__section;
       padding: 5.5% 0 0 12%;
@@ -898,6 +924,11 @@ h1 {
       flex-direction: column;
       justify-content: space-around;
 
+      @include media-lg {
+        display: flex;
+        flex-direction: row;
+      }
+
       &__left {
         color: #ff5733;
         @include buttonLight;
@@ -912,6 +943,10 @@ h1 {
 
   .relations {
     height: 280vh;
+
+    @include media-lg {
+      height: 170vh;
+    }
 
     &__title {
       font-size: size(normal);
@@ -962,6 +997,10 @@ h1 {
         "relations__top"
         "relations__grid__bottom";
 
+      @include media-lg {
+        grid-template-rows: 0.3fr 1.7fr;
+      }
+
       &__top {
         grid-area: relations__top;
         display: flex;
@@ -978,6 +1017,13 @@ h1 {
         align-items: center;
         @include buttonLight;
         @include css-box-shadow;
+
+        @include media-lg {
+          margin-top: -10%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
       }
 
       &__button {
@@ -1016,6 +1062,10 @@ h1 {
       }
       &__move {
         padding-top: 10%;
+
+        @include media-lg {
+          padding-top: 0;
+        }
       }
     }
   }
