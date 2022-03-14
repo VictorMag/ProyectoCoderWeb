@@ -476,15 +476,21 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 @media screen and (min-width: 768px) { .main .give__title { -webkit-transform: rotate(0deg); transform: rotate(0deg); padding: 30% 0 20% 5%; color: #100000; font-size: 2em; font-weight: 1000; position: absolute; z-index: 15; } }
 
+@media screen and (min-width: 1024px) { .main .give__title { font-size: 5em; padding: 10% 0 0 10%; } }
+
 .main .give__subtitle { position: absolute; color: #6d6969; letter-spacing: 2px; font-size: 0.9rem; padding: 2% 0 0 15%; line-height: 20px; z-index: 14; }
 
 @media screen and (min-width: 768px) { .main .give__subtitle { padding: 50% 0 0 5%; } }
+
+@media screen and (min-width: 1024px) { .main .give__subtitle { padding: 30% 0 0 10%; } }
 
 .main .give__arrow { position: absolute; z-index: 13; padding: 80% 0 0 60%; }
 
 .main .give__arrow:hover .arrowGive:hover { opacity: 0.65; cursor: pointer; }
 
 @media screen and (min-width: 768px) { .main .give__arrow { padding: 50% 0 0 60%; } }
+
+@media screen and (min-width: 1024px) { .main .give__arrow { padding: 35% 0 0 10%; } }
 
 .main .give__button { border-radius: 50%; padding: 0.02em 0.1em; background-color: #100000; border-style: solid; cursor: pointer; border-color: #100000; color: #f0f0f0; font-size: 20px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; }
 
@@ -495,6 +501,8 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 .main .give__img--modify { z-index: -900; position: relative; border-radius: 10px; height: 300px; width: 350px; display: block; box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3); }
 
 @media screen and (min-width: 768px) { .main .give__img--modify { width: 400px; } }
+
+@media screen and (min-width: 1024px) { .main .give__img--modify { height: 25em; width: 30em; } }
 
 .main .give .slide-right { width: 100%; overflow: hidden; }
 
@@ -514,6 +522,8 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 @media screen and (min-width: 768px) { .main .cards { margin-top: 20%; height: 180vh; } }
 
+@media screen and (min-width: 1024px) { .main .cards { height: 100vh; margin-top: 0; } }
+
 .main .cards__button { border-radius: 50%; padding: 0.02rem 0.1rem; background-color: #100000; border-style: solid; cursor: pointer; border-color: #100000; color: #f0f0f0; font-size: 14px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; }
 
 .main .cards__button:hover { opacity: 0.65; }
@@ -526,27 +536,45 @@ h1 { color: #100000; font-family: "Work Sans", sans-serif; font-weight: 1000; }
 
 .main .cards__title { font-size: 1.7em; margin: 5% 0 0 30%; }
 
+@media screen and (min-width: 1024px) { .main .cards__title { margin: 5% 0 0 20%; } }
+
 .main .cards__title__subtitle { text-align: justify; margin-top: 20px; font-size: 16px; }
 
 .main .cards__img1 { margin-top: 25px; margin-left: 15%; border-radius: 20px; height: 12em; width: 16em; }
 
+@media screen and (min-width: 1024px) { .main .cards__img1 { margin-left: 0%; } }
+
 .main .cards__img2 { margin-top: 25px; margin-left: 15%; border-radius: 20px; height: 12em; width: 16em; }
 
+@media screen and (min-width: 1024px) { .main .cards__img2 { margin-left: 0%; } }
+
 .main .cards__title2 { font-size: 1.7em; margin: 5% 0 0 30%; }
+
+@media screen and (min-width: 1024px) { .main .cards__title2 { margin: 5% 0 0 20%; } }
 
 .main .cards__title2__subtitle { text-align: justify; margin-top: 20px; font-size: 16px; }
 
 .main .cards__img3 { margin-top: 25px; margin-left: 15%; border-radius: 20px; height: 12em; width: 16em; }
 
+@media screen and (min-width: 1024px) { .main .cards__img3 { margin-left: 0%; } }
+
 .main .cards__title3 { font-size: 1.7em; margin: 5% 0 0 30%; }
+
+@media screen and (min-width: 1024px) { .main .cards__title3 { margin: 5% 0 0 20%; } }
 
 .main .cards__title3__subtitle { text-align: justify; margin-top: 20px; font-size: 16px; }
 
 .main .cards__checks { padding-left: 27%; }
 
+@media screen and (min-width: 1024px) { .main .cards__checks { padding-left: 15%; } }
+
 .main .cards__harvest { padding-top: 15px; padding-left: 30%; }
 
+@media screen and (min-width: 1024px) { .main .cards__harvest { padding-left: 20%; } }
+
 .main .cards__direction { font-weight: 800; font-size: 15px; padding-left: 7%; }
+
+@media screen and (min-width: 1024px) { .main .cards__direction { padding: 0; } }
 
 .main .cards__box3, .main .cards__box3-1, .main .cards__email { font-weight: 800; }
 

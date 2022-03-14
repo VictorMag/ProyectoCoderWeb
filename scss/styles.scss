@@ -1102,6 +1102,11 @@ h1 {
         position: absolute;
         z-index: 15;
       }
+
+      @include media-lg {
+        font-size: size(laptop);
+        padding: 10% 0 0 10%;
+      }
     }
 
     &__subtitle {
@@ -1115,6 +1120,10 @@ h1 {
 
       @include media-md {
         padding: 50% 0 0 5%;
+      }
+
+      @include media-lg {
+        padding: 30% 0 0 10%;
       }
     }
 
@@ -1132,6 +1141,10 @@ h1 {
 
       @include media-md {
         padding: 50% 0 0 60%;
+      }
+
+      @include media-lg {
+        padding: 35% 0 0 10%;
       }
     }
 
@@ -1170,6 +1183,11 @@ h1 {
       @include media-md {
         width: 400px;
       }
+
+      @include media-lg {
+        height: 25em;
+        width: 30em;
+      }
     }
 
     .slide-right {
@@ -1203,6 +1221,11 @@ h1 {
     @include media-md {
       margin-top: 20%;
       height: 180vh;
+    }
+
+    @include media-lg {
+      height: 100vh;
+      margin-top: 0;
     }
 
     &__button {
@@ -1253,6 +1276,10 @@ h1 {
       font-size: size(medium);
       margin: 5% 0 0 30%;
 
+      @include media-lg {
+        margin: 5% 0 0 20%;
+      }
+
       &__subtitle {
         text-align: justify;
         margin-top: 20px;
@@ -1266,6 +1293,10 @@ h1 {
       border-radius: 20px;
       height: 12em;
       width: 16em;
+
+      @include media-lg {
+        margin-left: 0%;
+      }
     }
 
     &__img2 {
@@ -1274,11 +1305,19 @@ h1 {
       border-radius: 20px;
       height: 12em;
       width: 16em;
+
+      @include media-lg {
+        margin-left: 0%;
+      }
     }
 
     &__title2 {
       font-size: size(medium);
       margin: 5% 0 0 30%;
+
+      @include media-lg {
+        margin: 5% 0 0 20%;
+      }
 
       &__subtitle {
         text-align: justify;
@@ -1293,11 +1332,19 @@ h1 {
       border-radius: 20px;
       height: 12em;
       width: 16em;
+
+      @include media-lg {
+        margin-left: 0%;
+      }
     }
 
     &__title3 {
       font-size: size(medium);
       margin: 5% 0 0 30%;
+
+      @include media-lg {
+        margin: 5% 0 0 20%;
+      }
 
       &__subtitle {
         text-align: justify;
@@ -1308,17 +1355,29 @@ h1 {
 
     &__checks {
       padding-left: 27%;
+
+      @include media-lg {
+        padding-left: 15%;
+      }
     }
 
     &__harvest {
       padding-top: 15px;
       padding-left: 30%;
+
+      @include media-lg {
+        padding-left: 20%;
+      }
     }
 
     &__direction {
       font-weight: 800;
       font-size: 15px;
       padding-left: 7%;
+
+      @include media-lg {
+        padding: 0;
+      }
     }
 
     &__box3,
